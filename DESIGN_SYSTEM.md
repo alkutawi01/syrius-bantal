@@ -1,21 +1,23 @@
-# Syrius Design System v1.0
+# Syrius Design System v1.1
 
 ## Direction
 
-**Warm editorial corporate gifting.** The visual language takes cues from modern premium B2B commerce: generous typography, a restrained palette, one vivid accent, and product presentation that makes branded merchandise feel considered rather than generic. It should not imitate a competitor's exact layout, copy, assets, or distinctive trade dress.
+**Original Syrius identity, applied to corporate gifting.** The site uses Syrius's navy, white and coral palette with a clean, confident B2B feel. Branded sublimation pillows are presented as a meaningful corporate gift, while the brand mark and colours remain recognisably Syrius.
 
 ## Tokens
 
 | Category | Token | Value | Use |
 |---|---|---:|---|
-| Ink | `--ink` | `#181616` | Type, dark surfaces |
-| Paper | `--paper` | `#F8F6F1` | Default background |
-| Warm | `--warm` | `#EEE9DF` | Supporting section |
-| Coral | `--coral` | `#EC604B` | Main action / emphasis |
-| Line | `--line` | `#D9D3C8` | Dividers / boundaries |
+| Navy | `--navy` | `#020333` | Brand surfaces, navigation, footer |
+| Ink | `--ink` | `#122428` | Headings and high-emphasis text |
+| Text | `--text` | `#6D6D6D` | Supporting body copy |
+| White | `--white` | `#FAFAFA` | Text and light surfaces |
+| Coral | `--coral` | `#FF6048` | Primary action / emphasis |
+| Mist | `--mist` | `#F4F6F8` | Supporting section backgrounds |
+| Line | `--line` | `#DFE3E8` | Dividers / boundaries |
 | Space | `--s1`…`--s8` | 8–112px | Use scale; avoid arbitrary gaps |
 
-Typography: **Manrope** for UI/body, **Playfair Display** only for expressive display headings, and **DM Mono** for labels, IDs and utility text.
+Typography: **Plus Jakarta Sans** for headings, UI and body; use weight, scale and spacing—not a second display typeface—for hierarchy.
 
 ## Components
 
@@ -31,7 +33,7 @@ All buttons require visible text, at least 44px touch height on mobile, and a cl
 
 ### Wordmark
 
-Text-based Syrius mark for reliable rendering. Replace only when a final approved logo asset and clearspace rules are supplied. Customer logo artwork belongs on product mockups, never inside the Syrius wordmark.
+Use the supplied Syrius logo asset (`public/syrius-logo.png`) without redrawing, recolouring or adding symbols. It is a white mark and must sit on navy brand surfaces with comfortable clear space. Customer logo artwork belongs on product mockups, never inside the Syrius wordmark.
 
 ### Eyebrow
 
@@ -46,7 +48,7 @@ Use fine divider lines rather than heavy shadows. Cards are descriptive, not cli
 - Desktop container: 1180px maximum; mobile gutters: 16px.
 - Section padding: 112px desktop / 72px mobile.
 - Main landing rhythm: proof → story → process → conversion.
-- The coral CTA surface may appear once near the end of a long page; do not use it for every section.
+- Use navy as the anchor surface, coral as an action accent, and mist for visual breathing room. Do not introduce unapproved brand colours.
 
 ## Interaction and accessibility
 
@@ -58,4 +60,4 @@ Use fine divider lines rather than heavy shadows. Cards are descriptive, not cli
 
 ## Claude Code handoff
 
-The first implementation is a single responsive landing page with reusable `Button` and `Wordmark` components. Future work should extract section primitives only after a second page needs them. Keep all colours and spacing on the token scale above; do not introduce a UI library unless it solves a demonstrated need.
+The first implementation is a single responsive landing page with reusable `Button` and `Wordmark` components. Future work should extract section primitives only after a second page needs them. Preserve the supplied Syrius logo and token values above; do not introduce a UI library unless it solves a demonstrated need.
