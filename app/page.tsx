@@ -17,7 +17,7 @@ const steps = [
 
 export default function Home() {
   return <main>
-    <div className="announcement"><div className="container">CORPORATE GIFTING &amp; BRANDED PILLOWS <span>·</span> KELANTAN &amp; PAHANG</div></div>
+    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Pillows</span><a href="tel:+601154498790">+60 11-5449 8790</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="#utama" aria-label="Syrius, kembali ke atas"><Wordmark /></a>
       <nav aria-label="Navigasi utama"><a href="#cara">Cara tempahan</a><a href="#koleksi">Kegunaan</a><a href="#tentang">Tentang kami</a></nav>

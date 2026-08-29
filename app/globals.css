@@ -26,7 +26,9 @@ a { color: inherit; text-decoration: none; }
 .container { width: min(1180px, calc(100% - 48px)); margin: auto; }
 
 .announcement { background: var(--navy-soft); color: rgba(255,255,255,.72); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 12px 0; }
-.announcement span { color: rgba(255,255,255,.4); padding: 0 10px; }
+.announcement .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.announcement a { color: #fff; transition: color .2s; }
+.announcement a:hover { color: rgba(255,255,255,.7); }
 .site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 20; }
 .nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav nav { display: flex; gap: 32px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.78); }
@@ -52,7 +54,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { color: var(--text); font-size: 11px; font-weight: 700; letter-spacing: .12em; margin: 0 0 18px; text-transform: uppercase; }
 .hero h1, .section h2, .statement h2, .final-cta h2 { color: var(--ink); font-size: clamp(38px, 5vw, 60px); font-weight: 800; letter-spacing: -.03em; line-height: 1.08; margin: 0; }
 .hero h1 em, .section h2 em, .final-cta h2 em { font-style: normal; }
-.hero h1 em { text-decoration-line: underline; text-decoration-color: currentColor; text-decoration-thickness: 4px; text-underline-offset: 10px; }
+.hero h1 em { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: currentColor; text-decoration-thickness: 3px; text-underline-offset: 8px; }
 .final-cta h2 { color: #fff; }
 .lede { color: var(--text); font-size: 16px; line-height: 1.7; max-width: 480px; margin: 24px 0 30px; }
 .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
@@ -114,6 +116,8 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; } }
 @media (max-width: 760px) {
   .container { width: min(100% - 32px, 1180px); }
+  .announcement .container { font-size: 10px; justify-content: center; }
+  .announcement span { display: none; }
   .nav { height: 66px; }
   .nav nav { display: none; }
   .nav .button { font-size: 11px; padding: 10px 14px; }
