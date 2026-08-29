@@ -65,7 +65,7 @@ a { color: inherit; text-decoration: none; }
 .hero-photo figcaption b { font-weight: 800; }
 .marquee { background: var(--navy); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; overflow: hidden; padding: 16px 0; white-space: nowrap; }
 .marquee div { animation: move 28s linear infinite; display: inline-block; }
-@keyframes move { to { transform: translateX(-20%); } }
+@keyframes move { to { transform: translateX(-50%); } }
 
 .section { padding: var(--s8) 0; }
 .section-intro, .process-head { display: grid; gap: 36px; grid-template-columns: 1.7fr .8fr; grid-template-areas: "eyebrow desc" "heading desc"; }
