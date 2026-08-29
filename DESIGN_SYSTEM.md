@@ -1,23 +1,25 @@
-# Syrius Design System v1.1
+# Syrius Design System v1.2
 
 ## Direction
 
-**Original Syrius identity, applied to corporate gifting.** The site uses Syrius's navy, white and coral palette with a clean, confident B2B feel. Branded sublimation pillows are presented as a meaningful corporate gift, while the brand mark and colours remain recognisably Syrius.
+**Original Syrius identity, applied to corporate gifting.** The site is built strictly on Syrius's real palette from syrius.com.my — navy and white, no invented accent colour. Sections alternate between white/light surfaces and solid navy blocks (header, footer, statement, final CTA), matching the parent jersey site's rhythm. Branded sublimation pillows are presented as a meaningful corporate gift, while the brand mark, palette and tone remain recognisably Syrius, not a separate sub-brand.
 
 ## Tokens
 
 | Category | Token | Value | Use |
 |---|---|---:|---|
-| Navy | `--navy` | `#020333` | Brand surfaces, navigation, footer |
-| Ink | `--ink` | `#122428` | Headings and high-emphasis text |
-| Text | `--text` | `#6D6D6D` | Supporting body copy |
-| White | `--white` | `#FAFAFA` | Text and light surfaces |
-| Coral | `--coral` | `#FF6048` | Primary action / emphasis |
-| Mist | `--mist` | `#F4F6F8` | Supporting section backgrounds |
-| Line | `--line` | `#DFE3E8` | Dividers / boundaries |
+| Navy | `--navy` | `#020333` | Brand surfaces: header, footer, statement, final CTA, primary buttons |
+| Navy soft | `--navy-soft` | `#12144D` | Hover state for navy surfaces |
+| Ink | `--ink` | `#122428` | Headings and high-emphasis text on light surfaces |
+| Text | `--text` | `#6D6D6D` | Supporting body copy (matches syrius.com.my body colour) |
+| White | `--white` | `#FFFFFF` | Default page background |
+| Mist | `--mist` | `#F4F6F8` | Supporting section backgrounds (process section, icon badges) |
+| Line | `--line` | `#DFE3E8` | Dividers / card borders |
 | Space | `--s1`…`--s8` | 8–112px | Use scale; avoid arbitrary gaps |
 
-Typography: **Plus Jakarta Sans** for headings, UI and body; use weight, scale and spacing—not a second display typeface—for hierarchy.
+No accent colour beyond navy/white. Emphasis in headings is a navy underline stroke behind the emphasised words, not a colour change. The only non-brand colour on the page is the WhatsApp green (`#25D366`) on the floating contact button, matching the real WhatsApp widget convention.
+
+Typography: **Plus Jakarta Sans** for headings, UI and body; use weight, scale and spacing — not a second display typeface — for hierarchy.
 
 ## Components
 
@@ -25,11 +27,10 @@ Typography: **Plus Jakarta Sans** for headings, UI and body; use weight, scale a
 
 | Variant | Use |
 |---|---|
-| `coral` | One primary action per viewport |
-| `dark` | Header or dark-on-light secondary conversion action |
-| `light` | Action on a dark/coral surface |
+| `navy` | Solid navy pill — primary action on a white/light surface |
+| `white` | Solid white pill, navy text — primary action on a navy surface (header, final CTA) |
 
-All buttons require visible text, at least 44px touch height on mobile, and a clear destination. External WhatsApp links open in a new tab.
+All buttons are full pill shape (`border-radius: 999px`), require visible text, at least 44px touch height on mobile, and a clear destination. External WhatsApp links open in a new tab. A fixed floating WhatsApp button (`.fab-whatsapp`) stays available bottom-right on every screen, matching the parent site's persistent contact pattern.
 
 ### Wordmark
 
@@ -48,7 +49,7 @@ Use fine divider lines rather than heavy shadows. Cards are descriptive, not cli
 - Desktop container: 1180px maximum; mobile gutters: 16px.
 - Section padding: 112px desktop / 72px mobile.
 - Main landing rhythm: proof → story → process → conversion.
-- Use navy as the anchor surface, coral as an action accent, and mist for visual breathing room. Do not introduce unapproved brand colours.
+- Use navy as the anchor surface and mist for visual breathing room. Do not introduce an accent colour beyond navy/white.
 
 ## Interaction and accessibility
 
