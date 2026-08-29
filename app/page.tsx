@@ -30,7 +30,7 @@ export default function Home() {
         <h1>Logo anda.<br /><em>Dalam ingatan mereka.</em></h1>
         <p className="lede">Custom bantal sublimation untuk syarikat, organisasi dan jenama yang mahu memberi sesuatu lebih bermakna daripada cenderamata biasa.</p>
         <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
-        <div className="proof"><span>Logo &amp; warna jenama anda</span><span>Sesuai untuk hadiah korporat</span></div>
+        <div className="proof"><span>Sebahagian daripada Syrius, sejak 2011</span><span>Liputan Kelantan &amp; Pahang</span></div>
       </div>
       <figure className="hero-photo"><div className="photo-wrap"><img src="/syrius-corporate-pillows.png" alt="Bantal sublimation korporat dengan contoh logo abstrak di ruang pejabat" /></div><figcaption><span>CORPORATE GIFTING</span><b>Made for your brand</b></figcaption></figure>
     </div></section>
