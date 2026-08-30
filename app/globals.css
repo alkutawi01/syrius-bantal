@@ -54,7 +54,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { color: var(--text); font-size: 11px; font-weight: 700; letter-spacing: .12em; margin: 0 0 18px; text-transform: uppercase; }
 .hero h1, .section h2, .statement h2, .final-cta h2 { color: var(--ink); font-size: clamp(38px, 5vw, 60px); font-weight: 800; letter-spacing: -.03em; line-height: 1.08; margin: 0; }
 .hero h1 em, .section h2 em, .final-cta h2 em { font-style: normal; }
-.hero h1 em { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: currentColor; text-decoration-thickness: 3px; text-underline-offset: 8px; }
+.hero h1 em { display: inline-block; padding-bottom: 0.22em; background-repeat: no-repeat; background-position: left bottom; background-size: 100% 0.28em; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 30' preserveAspectRatio='none'%3E%3Cpath d='M6 12 Q 55 2 110 9 T 205 8' fill='none' stroke='%23020333' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M4 23 Q 60 16 120 20 T 214 18' fill='none' stroke='%23020333' stroke-width='6' stroke-linecap='round' stroke-opacity='.75'/%3E%3C/svg%3E"); }
 .final-cta h2 { color: #fff; }
 .lede { color: var(--text); font-size: 16px; line-height: 1.7; max-width: 480px; margin: 24px 0 30px; }
 .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
