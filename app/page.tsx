@@ -32,7 +32,7 @@ export default function Home() {
         <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
         <div className="proof"><span>Sebahagian daripada Syrius, sejak 2011</span><span>Liputan Kelantan &amp; Pahang</span></div>
       </div>
-      <figure className="hero-photo"><div className="photo-wrap"><img src="/syrius-corporate-pillows.png" alt="Bantal sublimation korporat dengan contoh logo abstrak di ruang pejabat" /></div><figcaption><span>CORPORATE GIFTING</span><b>Made for your brand</b></figcaption></figure>
+      <figure className="hero-photo"><div className="photo-wrap"><img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimation kosong, sedia untuk cetakan logo jenama anda" /></div><figcaption><span>CORPORATE GIFTING</span><b>Made for your brand</b></figcaption></figure>
     </div></section>
 
     <section className="marquee"><div>HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI · HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI</div></section>
