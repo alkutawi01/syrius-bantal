@@ -24,27 +24,32 @@ export default function Home() {
       <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
     </div></header>
 
-    <section className="hero" id="utama"><div className="container hero-grid">
-      <div className="hero-copy">
-        <p className="eyebrow">BRANDED COMFORT, MADE TO GIFT</p>
-        <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
-        <p className="lede">Custom bantal sublimation untuk syarikat, organisasi dan jenama yang mahu memberi sesuatu lebih bermakna daripada cenderamata biasa.</p>
-        <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
-        <div className="proof"><span>Sebahagian daripada Syrius, sejak 2011</span><span>Liputan Kelantan &amp; Pahang</span></div>
-      </div>
-      <figure className="hero-photo"><div className="photo-wrap"><img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimation kosong, sedia untuk cetakan logo jenama anda" /></div><figcaption><span>CORPORATE GIFTING</span><b>Made for your brand</b></figcaption></figure>
+    <section className="hero" id="utama"><div className="container hero-stack">
+      <p className="eyebrow">BRANDED COMFORT, MADE TO GIFT</p>
+      <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
+      <p className="lede">Custom bantal sublimation untuk syarikat, organisasi dan jenama yang mahu memberi sesuatu lebih bermakna daripada cenderamata biasa.</p>
+      <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
+      <div className="proof"><span>Sebahagian daripada Syrius, sejak 2011</span><span>Liputan Kelantan &amp; Pahang</span></div>
     </div></section>
+
+    <figure className="full-photo">
+      <img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimation kosong, sedia untuk cetakan logo jenama anda" />
+      <figcaption><div className="container"><span>Corporate gifting</span>Made for your brand</div></figcaption>
+    </figure>
 
     <section className="marquee"><div>HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI · HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI</div></section>
 
     <section className="section values" id="koleksi"><div className="container">
-      <div className="section-intro"><p className="eyebrow">LEBIH DARIPADA CENDERAMATA</p><h2>Beri sesuatu yang<br /><em>ada nama jenama anda.</em></h2><p>Bantal berlogo menjadikan setiap pemberian satu pengalaman jenama yang lembut, berguna dan mudah diingati.</p></div>
-      <div className="value-grid">{values.map(([title, text]) => <article className="value-card" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
+      <div className="section-head"><p className="eyebrow">LEBIH DARIPADA CENDERAMATA</p><h2>Beri sesuatu yang <em>ada nama jenama anda.</em></h2><p>Bantal berlogo menjadikan setiap pemberian satu pengalaman jenama yang lembut, berguna dan mudah diingati.</p></div>
+      <div className="value-list">{values.map(([title, text]) => <article className="value-row" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
     </div></section>
 
     <section className="statement" id="tentang"><div className="container statement-grid"><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan manusia.</h2><p>Syrius membantu organisasi menterjemah identiti visual mereka kepada hadiah korporat yang berguna. Untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
 
-    <section className="section process" id="cara"><div className="container"><div className="process-head"><p className="eyebrow">CARA TEMPAHAN</p><h2>Dari logo ke<br /><em>hadiah berjenama.</em></h2><p>Tiga langkah ringkas. Kami bantu anda dari awal hingga artwork siap.</p></div><ol className="steps">{steps.map(([number, title, text]) => <li key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol></div></section>
+    <section className="section process" id="cara"><div className="container">
+      <div className="section-head"><p className="eyebrow">CARA TEMPAHAN</p><h2>Dari logo ke <em>hadiah berjenama.</em></h2><p>Tiga langkah ringkas. Kami bantu anda dari awal hingga artwork siap.</p></div>
+      <ol className="timeline">{steps.map(([number, title, text]) => <li key={number}><span className="dot">{number}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol>
+    </div></section>
 
     <section className="final-cta"><div className="container"><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang artwork, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
 
