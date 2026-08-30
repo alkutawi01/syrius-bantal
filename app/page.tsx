@@ -10,9 +10,9 @@ const values = [
 ];
 
 const steps = [
-  ['01', 'Kongsi keperluan', 'Beritahu kami acara, jumlah unit dan tujuan bantal korporat anda.'],
-  ['02', 'Hantar logo', 'Kirim logo, warna jenama atau panduan visual melalui WhatsApp.'],
-  ['03', 'Sahkan tempahan', 'Kami semak artwork dan sediakan sebut harga sebelum cetakan bermula.'],
+  ['01', 'Kongsi keperluan', 'Beritahu kami acara, jumlah unit dan tujuan bantal korporat anda.', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
+  ['02', 'Hantar logo', 'Kirim logo, warna jenama atau panduan visual melalui WhatsApp.', <svg key="i2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['03', 'Sahkan tempahan', 'Kami semak artwork dan sediakan sebut harga sebelum cetakan bermula.', <svg key="i3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
 ];
 
 export default function Home() {
@@ -24,12 +24,17 @@ export default function Home() {
       <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
     </div></header>
 
-    <section className="hero" id="utama"><div className="container hero-stack">
-      <p className="eyebrow">BRANDED COMFORT, MADE TO GIFT</p>
-      <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
-      <p className="lede">Custom bantal sublimation untuk syarikat, organisasi dan jenama yang mahu memberi sesuatu lebih bermakna daripada cenderamata biasa.</p>
-      <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
-      <div className="proof"><span>Sebahagian daripada Syrius, sejak 2011</span><span>Liputan Kelantan &amp; Pahang</span></div>
+    <section className="hero" id="utama"><div className="container hero-grid">
+      <div className="hero-stack">
+        <p className="eyebrow">BRANDED COMFORT, MADE TO GIFT</p>
+        <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
+        <p className="lede">Custom bantal sublimation untuk syarikat, organisasi dan jenama yang mahu memberi sesuatu lebih bermakna daripada cenderamata biasa.</p>
+        <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div className="hero-facts">
+        <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /><path d="M8.5 14.5l2 2 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg><div><b>Sejak 2011</b><span>Sebahagian daripada Syrius</span></div></div>
+        <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg><div><b>Kelantan &amp; Pahang</b><span>Liputan penghantaran</span></div></div>
+      </div>
     </div></section>
 
     <figure className="full-photo">
@@ -40,15 +45,15 @@ export default function Home() {
     <section className="marquee"><div>HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI · HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI</div></section>
 
     <section className="section values" id="koleksi"><div className="container">
-      <div className="section-head"><p className="eyebrow">LEBIH DARIPADA CENDERAMATA</p><h2>Beri sesuatu yang <em>ada nama jenama anda.</em></h2><p>Bantal berlogo menjadikan setiap pemberian satu pengalaman jenama yang lembut, berguna dan mudah diingati.</p></div>
+      <div className="section-head"><div><p className="eyebrow">LEBIH DARIPADA CENDERAMATA</p><h2>Beri sesuatu yang <em>ada nama jenama anda.</em></h2></div><p>Bantal berlogo menjadikan setiap pemberian satu pengalaman jenama yang lembut, berguna dan mudah diingati.</p></div>
       <div className="value-list">{values.map(([title, text]) => <article className="value-row" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
     </div></section>
 
     <section className="statement" id="tentang"><div className="container statement-grid"><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan manusia.</h2><p>Syrius membantu organisasi menterjemah identiti visual mereka kepada hadiah korporat yang berguna. Untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
 
     <section className="section process" id="cara"><div className="container">
-      <div className="section-head"><p className="eyebrow">CARA TEMPAHAN</p><h2>Dari logo ke <em>hadiah berjenama.</em></h2><p>Tiga langkah ringkas. Kami bantu anda dari awal hingga artwork siap.</p></div>
-      <ol className="timeline">{steps.map(([number, title, text]) => <li key={number}><span className="dot">{number}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol>
+      <div className="section-head"><div><p className="eyebrow">CARA TEMPAHAN</p><h2>Dari logo ke <em>hadiah berjenama.</em></h2></div><p>Tiga langkah ringkas. Kami bantu anda dari awal hingga artwork siap.</p></div>
+      <ol className="timeline">{steps.map(([number, title, text, icon]) => <li key={number}><span className="dot">{icon}</span><div><b className="step-number">{number}</b><h3>{title}</h3><p>{text}</p></div></li>)}</ol>
     </div></section>
 
     <section className="final-cta"><div className="container"><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang artwork, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
