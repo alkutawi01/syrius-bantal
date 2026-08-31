@@ -61,7 +61,7 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Apa yang dikatakan kajian industri</h2>
-        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati jenama atau organisasi yang memberikan barang promosi kepada mereka. Promotional Products Association International (PPAI) pula mendapati angka ini kekal setinggi 89% walaupun selepas dua tahun berlalu.</p>
+        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati jenama atau organisasi yang memberikan barang promosi kepada mereka. Promotional Products Association International (PPAI) pula mendapati angka ini kekal setinggi 89% walaupun selepas dua tahun berlalu.</p>
         <p>Kajian ASI turut mendapati barang promosi menghasilkan purata 3,300 pendedahan jenama sepanjang tempoh penggunaannya, dengan kos purata serendah AS$0.006 bagi setiap pendedahan, iaitu lebih menjimatkan berbanding banyak saluran pengiklanan digital. Faktor utama di sebalik angka ini: 78% responden menyimpan barang promosi kerana menganggapnya berguna, dan 76% menyatakan mereka lebih cenderung berurusan dengan jenama yang memberikan barang bercetak logo berbanding yang tidak.</p>
       </div>
 
@@ -84,7 +84,7 @@ export default function Artikel() {
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
         <h2 style={{ color: 'var(--ink)', fontSize: 16, letterSpacing: '-.01em', margin: '0 0 10px' }}>Rujukan</h2>
         <ul style={{ paddingLeft: 20, margin: 0, display: 'grid', gap: 8, color: 'var(--text)', fontSize: 13.5 }}>
-          <li>Advertising Specialty Institute (ASI). <em style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> — kajian tinjauan terhadap hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah.</li>
+          <li>Advertising Specialty Institute (ASI). <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> — kajian tinjauan terhadap hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah.</li>
           <li>Promotional Products Association International (PPAI). Laporan dan kajian berkaitan ingatan jenama terhadap produk promosi.</li>
         </ul>
       </div>
