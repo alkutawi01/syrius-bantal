@@ -129,7 +129,13 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
 
 *:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
 
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; } }
+[data-reveal] { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; }
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
 @media (max-width: 900px) {
   .bento-grid { grid-template-columns: 1fr 1fr; grid-template-areas: "hero hero" "photo photo" "val1 val2" "val3 fact" "steps steps"; }
 }

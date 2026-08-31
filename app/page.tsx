@@ -1,5 +1,6 @@
 import { Button } from './components/Button';
 import { Wordmark } from './components/Wordmark';
+import { ScrollReveal } from './components/ScrollReveal';
 
 const whatsappUrl = 'https://wa.me/601154498790?text=Hi%20Syrius%2C%20saya%20nak%20tempah%20bantal%20korporat%20berlogo';
 
@@ -17,6 +18,7 @@ const steps = [
 
 export default function Home() {
   return <main>
+    <ScrollReveal />
     <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Pillows</span><a href="tel:+601154498790">+60 11-5449 8790</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="#utama" aria-label="Syrius, kembali ke atas"><Wordmark /></a>
@@ -37,16 +39,16 @@ export default function Home() {
         <figcaption><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
 
-      {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" style={{ gridArea: `val${i + 1}` }} key={title}>
+      {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" style={{ gridArea: `val${i + 1}`, transitionDelay: `${i * 80}ms` }} data-reveal key={title}>
         <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
       </div>)}
 
-      <div className="bento-tile bento-fact" id="koleksi">
+      <div className="bento-tile bento-fact" id="koleksi" data-reveal style={{ transitionDelay: '240ms' }}>
         <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /><path d="M8.5 14.5l2 2 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg><div><b>Sejak 2011</b><span>Sebahagian daripada Syrius</span></div></div>
         <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg><div><b>Kelantan &amp; Pahang</b><span>Liputan penghantaran</span></div></div>
       </div>
 
-      <div className="bento-tile bento-steps" id="cara">
+      <div className="bento-tile bento-steps" id="cara" data-reveal>
         <p className="eyebrow">CARA TEMPAHAN</p>
         <div className="bento-steps-row">{steps.map(([number, title, text, icon]) => <div key={number}><span className="dot">{icon}</span><b className="step-number">{number}</b><h3>{title}</h3><p>{text}</p></div>)}</div>
       </div>
@@ -54,9 +56,9 @@ export default function Home() {
 
     <section className="marquee"><div>HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI · HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI</div></section>
 
-    <section className="statement" id="tentang"><div className="container statement-grid"><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan manusia.</h2><p>Syrius membantu organisasi menterjemah identiti visual mereka kepada hadiah korporat yang berguna. Untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
+    <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan manusia.</h2><p>Syrius membantu organisasi menterjemah identiti visual mereka kepada hadiah korporat yang berguna. Untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
 
-    <section className="final-cta"><div className="container"><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang artwork, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
+    <section className="final-cta"><div className="container" data-reveal><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang artwork, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
 
     <a className="fab-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Syrius">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z" stroke="#fff" strokeWidth="1.6"/><path d="M8.5 8.4c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.5 1.5.2.1.4.1.5-.1.2-.2.6-.7.8-1 .2-.2.4-.2.6-.1l1.5.7c.2.1.4.2.4.4.1.5-.1 1.1-.4 1.5-.3.4-1 .8-1.8.8-1.5 0-3.2-.9-4.5-2.1-1.3-1.3-2.3-3-2.5-4.6-.1-.7.1-1.3.5-1.7Z" fill="#fff"/></svg>
