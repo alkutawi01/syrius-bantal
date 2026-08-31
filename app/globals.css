@@ -97,6 +97,21 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 .bento-steps-row h3 { color: #fff; font-size: 16px; }
 .bento-steps-row p { color: rgba(255,255,255,.7); font-size: 13px; margin: 0; }
 
+.section { padding: var(--s8) 0; }
+.section-head { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: end; margin: 0 0 48px; }
+.section-head p:last-child { color: var(--text); font-size: 15px; margin: 0; }
+.section h2 { color: var(--ink); font-weight: 800; letter-spacing: -.03em; line-height: 1.08; margin: 0; font-size: clamp(30px, 3.6vw, 44px); }
+.section h2 em { font-style: normal; display: inline-block; padding-bottom: 0.15em; background-repeat: no-repeat; background-position: left bottom; background-size: 100% 0.22em; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 30' preserveAspectRatio='none'%3E%3Cpath d='M6 12 Q 55 2 110 9 T 205 8' fill='none' stroke='%23020333' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M4 23 Q 60 16 120 20 T 214 18' fill='none' stroke='%23020333' stroke-width='6' stroke-linecap='round' stroke-opacity='.75'/%3E%3C/svg%3E"); }
+
+.faq { background: var(--mist); }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; cursor: pointer; font-weight: 700; color: var(--ink); font-size: 15px; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-icon { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); background: #fff; color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 400; transition: transform .2s; }
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+.faq-item p { color: var(--text); font-size: 14px; line-height: 1.6; margin: 14px 0 0; max-width: 620px; }
+
 .marquee { background: var(--navy); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; overflow: hidden; padding: 16px 0; white-space: nowrap; }
 .marquee div { animation: move 28s linear infinite; display: inline-block; }
 @keyframes move { to { transform: translateX(-50%); } }
@@ -153,6 +168,8 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
   .bento-photo { min-height: 240px; }
   .bento-steps { padding: 28px 24px; }
   .bento-steps-row { grid-template-columns: 1fr; gap: 24px; }
+  .section { padding: var(--s7) 0; }
+  .section-head { grid-template-columns: 1fr; gap: 16px; }
   .statement-grid { gap: 18px; grid-template-columns: 1fr; }
   .statement, .final-cta { padding: 72px 0; }
   .footer-grid { gap: 24px; grid-template-columns: 1fr; }

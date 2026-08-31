@@ -10,6 +10,14 @@ const values = [
   ['Reka bentuk mengikut jenama anda', 'Kami menyesuaikan logo, warna dan susun atur mengikut identiti visual organisasi anda.', <svg key="v3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.7 2-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H16a4 4 0 0 0 4-4c0-4.4-3.6-8-8-8Z" stroke="currentColor" strokeWidth="1.5" /><circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" /><circle cx="10.5" cy="7" r="1.1" fill="currentColor" /><circle cx="15" cy="8" r="1.1" fill="currentColor" /></svg>],
 ];
 
+const faqs = [
+  ['Adakah kuantiti tempahan minimum tinggi?', 'Tidak. Tempahan tidak perlu bermula dalam jumlah besar untuk mendapatkan standard kualiti yang sama — sesuai untuk keperluan kecil seperti hadiah pasukan atau acara dalaman.'],
+  ['Bagaimana cara menempah?', 'Hubungi kami melalui WhatsApp, kongsi keperluan (jenis acara, jumlah unit dan tujuan), hantar logo dan warna jenama anda. Kami akan semak reka bentuk dan sediakan sebut harga sebelum cetakan bermula.'],
+  ['Bolehkah reka bentuk disesuaikan sepenuhnya ikut jenama kami?', 'Ya. Logo, warna dan susun atur disesuaikan mengikut identiti visual organisasi anda.'],
+  ['Kawasan mana yang diliputi untuk penghantaran?', 'Kelantan dan Pahang. Studio kami di Kota Bharu.'],
+  ['Berapa lama tempoh penyediaan tempahan?', 'Bergantung pada kuantiti dan kerumitan reka bentuk. Hubungi kami di WhatsApp untuk anggaran tempoh yang tepat mengikut keperluan anda.'],
+];
+
 const steps = [
   ['01', 'Kongsi keperluan', 'Beritahu kami jenis acara, jumlah unit dan tujuan bantal korporat anda.', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
   ['02', 'Hantar logo', 'Hantar logo, warna jenama atau panduan identiti visual melalui WhatsApp.', <svg key="i2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
@@ -22,7 +30,7 @@ export default function Home() {
     <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Pillows</span><a href="tel:+601154498790">+60 11-5449 8790</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="#utama" aria-label="Syrius, kembali ke atas"><Wordmark /></a>
-      <nav aria-label="Navigasi utama"><a href="#cara">Cara tempahan</a><a href="#koleksi">Kegunaan</a><a href="#tentang">Tentang kami</a></nav>
+      <nav aria-label="Navigasi utama"><a href="#cara">Cara tempahan</a><a href="#koleksi">Kegunaan</a><a href="#tentang">Tentang kami</a><a href="#faq">Soalan lazim</a></nav>
       <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
     </div></header>
 
@@ -57,6 +65,11 @@ export default function Home() {
     <section className="marquee"><div>HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI · HADIAH KORPORAT · MERCHANDISE BERLOGO · PENGHARGAAN STAF · ACARA ORGANISASI</div></section>
 
     <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Syrius membantu organisasi menterjemahkan identiti visual kepada hadiah korporat yang berguna dan bermakna untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
+
+    <section className="section faq" id="faq"><div className="container">
+      <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>hubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
+      <div className="faq-list">{faqs.map(([q, a]) => <details className="faq-item" key={q} data-reveal><summary>{q}<span className="faq-icon" aria-hidden="true">+</span></summary><p>{a}</p></details>)}</div>
+    </div></section>
 
     <section className="final-cta"><div className="container" data-reveal><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang reka bentuk, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
 
