@@ -29,17 +29,17 @@ export default function Panduan() {
 
     <section className="section" id="kandungan" tabIndex={-1}><div className="container">
       <div className="section-head" data-reveal>
-        <div><p className="eyebrow">PANDUAN</p><h2>Sebelum anda <em>menempah.</em></h2></div>
+        <div><p className="eyebrow">PANDUAN</p><h1>Sebelum anda <em>menempah.</em></h1></div>
         <p>Panduan ringkas untuk membantu anda memilih dan menyediakan tempahan bantal sublimasi korporat bersama Syrius.</p>
       </div>
 
       <div style={{ maxWidth: 700, margin: '0 0 var(--s7)' }} data-reveal>
-        <h3>Apa itu bantal sublimasi korporat?</h3>
+        <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Apa itu bantal sublimasi korporat?</h2>
         <p>Bantal sublimasi korporat ialah bantal yang dicetak menggunakan teknik sublimasi, iaitu proses mencetak reka bentuk terus ke atas fabrik supaya warna dan logo kekal tahan lama tanpa mudah pudar atau terkopek. Kaedah ini membolehkan logo, warna dan susun atur disesuaikan sepenuhnya mengikut identiti visual jenama anda.</p>
       </div>
 
       <div style={{ marginBottom: 'var(--s7)' }}>
-        <h3 data-reveal>Bila sesuai menggunakan bantal korporat?</h3>
+        <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: 0 }}>Bila sesuai menggunakan bantal korporat?</h2>
         <div className="bento-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateAreas: 'none', marginTop: 24 }}>
           {occasions.map(([title, text], i) => <div className="bento-tile bento-value" data-reveal style={{ transitionDelay: `${i * 80}ms` }} key={title}>
             <h3>{title}</h3><p>{text}</p>
@@ -48,7 +48,7 @@ export default function Panduan() {
       </div>
 
       <div style={{ marginBottom: 'var(--s7)' }}>
-        <h3 data-reveal>Menyediakan logo dan reka bentuk</h3>
+        <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Menyediakan logo dan reka bentuk</h2>
         <p data-reveal style={{ maxWidth: 700 }}>Untuk memastikan hasil cetakan setepat mungkin dengan identiti jenama anda, berikut beberapa perkara yang membantu proses semakan reka bentuk berjalan lancar:</p>
         <div className="faq-list" style={{ marginTop: 24 }}>
           {artworkTips.map(([title, text]) => <details className="faq-item" open key={title} data-reveal>
@@ -59,7 +59,7 @@ export default function Panduan() {
       </div>
 
       <div data-reveal>
-        <h3>Langkah tempahan</h3>
+        <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Langkah tempahan</h2>
         <p style={{ maxWidth: 700, marginBottom: 24 }}>Proses tempahan bermula dengan perbualan ringkas di WhatsApp — tiada borang panjang, tiada kuantiti minimum tinggi.</p>
         <ol style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 16, maxWidth: 700 }}>
           <li style={{ display: 'flex', gap: 14 }}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>01</b><span>Hubungi kami di WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.</span></li>
