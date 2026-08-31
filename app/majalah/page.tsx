@@ -25,6 +25,8 @@ export const metadata = {
 };
 
 const articles = [
+  ['apa-itu-percetakan-sublimasi', 'Apa itu percetakan sublimasi?', 'Penjelasan ringkas proses percetakan sublimasi: bagaimana reka bentuk digital dipindahkan secara kekal ke atas fabrik menggunakan haba dan tekanan.'],
+  ['jenis-pengisian-bantal', 'Panduan memahami jenis pengisian bantal', 'Perbezaan gentian poliester, bulu, kapok dan buih memori sebagai pengisian bantal — dari segi keselesaan, ketahanan dan penjagaan.'],
   ['idea-hadiah-korporat-bermakna', 'Mengapa hadiah korporat yang berguna lebih berkesan dalam membina ingatan jenama?', 'Kajian industri produk promosi menunjukkan hadiah yang benar-benar berguna lebih diingati berbanding cenderamata sekali guna. Rujukan, prinsip dan cara memilih.'],
 ];
 
