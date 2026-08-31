@@ -1,14 +1,16 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-const links = [
-  ['#cara', 'Cara tempahan'],
-  ['#koleksi', 'Kegunaan'],
-  ['#tentang', 'Tentang kami'],
-  ['#faq', 'Soalan lazim'],
-];
+type Props = { base?: string };
 
-export function MobileMenu() {
+export function MobileMenu({ base = '' }: Props) {
+  const links = [
+    [`${base}#cara`, 'Cara tempahan'],
+    [`${base}#koleksi`, 'Kegunaan'],
+    [`${base}#tentang`, 'Tentang kami'],
+    [`${base}#faq`, 'Soalan lazim'],
+    ['/panduan', 'Panduan'],
+  ];
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
