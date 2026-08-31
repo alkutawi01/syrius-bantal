@@ -85,8 +85,8 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 .bento-icon svg { width: 18px; height: 18px; }
 .bento-value p { color: var(--text); font-size: 13.5px; margin: 0; }
 
-.bento-fact { background: var(--mist); padding: 26px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
-.fact { display: flex; gap: 12px; align-items: flex-start; }
+.bento-fact { background: var(--mist); padding: 26px; display: flex; flex-direction: row; align-items: center; gap: 18px; }
+.fact { display: flex; gap: 12px; align-items: flex-start; flex: 1; }
 .fact svg { width: 24px; height: 24px; color: var(--navy); flex-shrink: 0; }
 .fact b { display: block; color: var(--ink); font-size: 13.5px; }
 .fact span { color: var(--text); font-size: 12px; }
@@ -180,6 +180,7 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
   .bento-grid { grid-template-columns: 1fr; grid-template-areas: "hero" "photo" "val1" "val2" "val3" "fact" "steps"; gap: 14px; }
   .bento-hero { padding: 30px 24px; }
   .bento-photo { min-height: 240px; }
+  .bento-fact { flex-direction: column; align-items: stretch; }
   .bento-steps { padding: 28px 24px; }
   .bento-steps-row { grid-template-columns: 1fr; gap: 24px; }
   .section { padding: var(--s7) 0; }
