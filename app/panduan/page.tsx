@@ -38,9 +38,27 @@ const artworkTips = [
   ['Susun atur', 'Beritahu kami jika logo perlu diletakkan di satu bahagian sahaja atau berulang merentasi bantal, dan sama ada teks tambahan (contoh: nama acara) perlu disertakan.'],
 ];
 
+const orderSteps = [
+  'Hubungi kami di WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.',
+  'Hantar logo, kod warna jenama dan sebarang panduan identiti visual mengikut format di atas.',
+  'Kami semak reka bentuk, sediakan sebut harga dan anggaran tempoh siap sebelum cetakan dimulakan.',
+];
+
+const howToJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cara menempah bantal korporat Syrius',
+  step: orderSteps.map((text, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    text,
+  })),
+};
+
 export default function Panduan() {
   return <main>
     <a className="skip-link" href="#kandungan">Langkau ke kandungan utama</a>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     <ScrollReveal />
     <SiteHeader base="/" />
 
@@ -89,9 +107,7 @@ export default function Panduan() {
         <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Langkah tempahan</h2>
         <p style={{ maxWidth: 700, marginBottom: 24 }}>Proses tempahan bermula dengan perbualan ringkas di WhatsApp — tiada borang panjang, tiada kuantiti minimum tinggi.</p>
         <ol style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 16, maxWidth: 700 }}>
-          <li style={{ display: 'flex', gap: 14 }}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>01</b><span>Hubungi kami di WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.</span></li>
-          <li style={{ display: 'flex', gap: 14 }}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>02</b><span>Hantar logo, kod warna jenama dan sebarang panduan identiti visual mengikut format di atas.</span></li>
-          <li style={{ display: 'flex', gap: 14 }}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>03</b><span>Kami semak reka bentuk, sediakan sebut harga dan anggaran tempoh siap sebelum cetakan dimulakan.</span></li>
+          {orderSteps.map((text, i) => <li style={{ display: 'flex', gap: 14 }} key={text}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>{String(i + 1).padStart(2, '0')}</b><span>{text}</span></li>)}
         </ol>
       </div>
     </div></section>
