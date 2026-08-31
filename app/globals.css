@@ -129,7 +129,8 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
 .footer-grid { display: grid; gap: 44px; grid-template-columns: 1.5fr 1fr 1fr; }
 .footer-grid .syrius-logo { width: 170px; }
 .footer-grid > div > p { color: rgba(255,255,255,.55); font-size: 13px; max-width: 250px; margin-top: 16px; }
-.footer-grid a { display: block; font-size: 13px; margin: 7px 0; color: rgba(255,255,255,.85); }
+.footer-grid a { display: block; font-size: 13px; margin: 7px 0; color: rgba(255,255,255,.85); transition: color .2s; }
+.footer-grid a:hover { color: #fff; }
 .footer-label { color: rgba(255,255,255,.4) !important; font-size: 10px !important; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .copyright { border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: .02em; margin-top: 45px; padding-top: 17px; }
 .copyright span { float: right; }
