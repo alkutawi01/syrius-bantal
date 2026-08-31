@@ -9,6 +9,7 @@ export function MobileMenu({ base = '' }: Props) {
     [`${base}#koleksi`, 'Kegunaan'],
     [`${base}#faq`, 'Soalan lazim'],
     ['/panduan', 'Panduan'],
+    ['/majalah', 'Majalah'],
     [`${base}#tentang`, 'Tentang kami'],
   ];
   const [open, setOpen] = useState(false);

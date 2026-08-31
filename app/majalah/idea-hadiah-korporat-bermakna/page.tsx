@@ -38,6 +38,13 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: 'Syrius' },
 };
 
+const stats = [
+  ['85%', 'pengguna mengingati pengiklan yang dikaitkan dengan produk promosi', 'ASI, Global Advertising Impressions Study 2026'],
+  ['3,300', 'purata pendedahan jenama bagi satu produk promosi sepanjang tempoh penggunaannya', 'ASI, Global Advertising Impressions Study 2026'],
+  ['AS$0.006', 'anggaran kos purata bagi setiap pendedahan jenama', 'ASI, Global Advertising Impressions Study 2026'],
+  ['9/10', 'pengguna dapat mengingati penjenamaan pada produk promosi yang diterima', 'PPAI, kajian pengguna'],
+];
+
 export default function Artikel() {
   return <main>
     <a className="skip-link" href="#artikel">Langkau ke kandungan utama</a>
@@ -46,7 +53,7 @@ export default function Artikel() {
     <SiteHeader base="/" />
 
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
-      <p className="eyebrow" data-reveal>ARTIKEL</p>
+      <p className="eyebrow" data-reveal>MAJALAH</p>
       <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '0 0 20px' }} data-reveal>
         Mengapa hadiah korporat yang berguna lebih berkesan dalam membina <em style={{ fontStyle: 'normal' }}>ingatan jenama?</em>
       </h1>
@@ -61,8 +68,18 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Apa yang dikatakan kajian industri</h2>
-        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati jenama atau organisasi yang memberikan barang promosi kepada mereka. Promotional Products Association International (PPAI) pula mendapati angka ini kekal setinggi 89% walaupun selepas dua tahun berlalu.</p>
-        <p>Kajian ASI turut mendapati barang promosi menghasilkan purata 3,300 pendedahan jenama sepanjang tempoh penggunaannya, dengan kos purata serendah AS$0.006 bagi setiap pendedahan, iaitu lebih menjimatkan berbanding banyak saluran pengiklanan digital. Faktor utama di sebalik angka ini: 78% responden menyimpan barang promosi kerana menganggapnya berguna, dan 76% menyatakan mereka lebih cenderung berurusan dengan jenama yang memberikan barang bercetak logo berbanding yang tidak.</p>
+        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati pengiklan atau jenama yang memberikan barang promosi kepada mereka. Kajian pengguna oleh Promotional Products Association International (PPAI) pula mendapati kira-kira sembilan daripada sepuluh responden dapat mengingati penjenamaan pada produk promosi yang diterima, termasuk selepas tempoh yang panjang.</p>
+
+        <p className="eyebrow" style={{ marginBottom: 8 }}>DAPATAN KAJIAN INDUSTRI</p>
+        <div className="stat-grid" data-reveal>
+          {stats.map(([number, label, source]) => <div className="stat-card" key={number}>
+            <p className="stat-number">{number}</p>
+            <p className="stat-label">{label}</p>
+            <p className="stat-source">Sumber: {source}</p>
+          </div>)}
+        </div>
+
+        <p>Kajian ASI turut menganggarkan bahawa produk promosi secara purata menghasilkan sekitar 3,300 pendedahan jenama sepanjang tempoh penggunaannya, dengan kos purata AS$0.006 bagi setiap pendedahan. Angka ini merupakan purata merentasi kategori produk promosi secara keseluruhan, bukan angka khusus bagi bantal sublimasi. Kajian ASI turut menunjukkan bahawa kegunaan merupakan antara faktor utama yang mempengaruhi penerima menyimpan produk promosi.</p>
       </div>
 
       <div data-reveal>
@@ -77,15 +94,15 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Bantal sublimasi sebagai pilihan hadiah korporat</h2>
-        <p>Bantal sublimasi korporat memenuhi ketiga-tiga kriteria di atas. Logo dan warna jenama boleh dicetak terus ke atas fabrik dengan hasil yang tahan lama; ia barang yang benar-benar digunakan di rumah, pejabat atau semasa perjalanan; dan tempahan boleh dibuat mengikut keperluan sebenar tanpa kuantiti minimum yang tinggi. Bantal pula merupakan barangan kegunaan harian yang berpotensi digunakan secara berulang dalam tempoh yang panjang, memberi peluang pendedahan jenama yang lebih konsisten berbanding banyak cenderahati korporat yang lain.</p>
-        <p>Walau bagaimanapun, kajian ASI dan PPAI di atas menyokong satu prinsip umum, iaitu hadiah promosi yang berguna lebih berkesan membina ingatan jenama — bukan bukti khusus bahawa bantal sublimasi lebih berkesan berbanding pen, beg atau cenderahati lain. Yang boleh dikatakan dengan yakin ialah bantal sublimasi korporat memenuhi ciri-ciri yang dikaitkan dengan keberkesanan hadiah korporat: kegunaan sebenar, tempoh penggunaan yang panjang dan keterlihatan jenama yang berterusan.</p>
+        <p>Walau bagaimanapun, kajian ASI dan PPAI di atas menyokong satu prinsip umum, iaitu produk promosi yang berguna berpotensi membantu meningkatkan ingatan terhadap jenama — bukan bukti khusus bahawa bantal sublimasi lebih berkesan berbanding pen, beg atau cenderahati lain.</p>
+        <p>Berdasarkan prinsip tersebut, bantal sublimasi korporat mempunyai beberapa ciri yang selari dengan faktor yang sering dikaitkan dengan keberkesanan hadiah korporat, termasuk kegunaan harian, tempoh penggunaan yang panjang dan keterlihatan jenama secara berulang. Logo dan warna jenama boleh dicetak terus ke atas fabrik dengan hasil yang tahan lama; ia barang yang benar-benar digunakan di rumah, pejabat atau semasa perjalanan; dan tempahan boleh dibuat mengikut keperluan sebenar tanpa kuantiti minimum yang tinggi.</p>
       </div>
 
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
         <h2 style={{ color: 'var(--ink)', fontSize: 16, letterSpacing: '-.01em', margin: '0 0 10px' }}>Rujukan</h2>
         <ul style={{ paddingLeft: 20, margin: 0, display: 'grid', gap: 8, color: 'var(--text)', fontSize: 13.5 }}>
           <li>Advertising Specialty Institute (ASI). <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> — kajian tinjauan terhadap hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah.</li>
-          <li>Promotional Products Association International (PPAI). Laporan dan kajian berkaitan ingatan jenama terhadap produk promosi.</li>
+          <li>Promotional Products Association International (PPAI). Kajian pengguna mengenai ingatan jenama terhadap produk promosi, termasuk kajian ingatan jangka panjang.</li>
         </ul>
       </div>
     </div></article>

@@ -15,6 +15,7 @@ export function SiteHeader({ base = '' }: Props) {
         <a href={`${base}#koleksi`}>Kegunaan</a>
         <a href={`${base}#faq`}>Soalan lazim</a>
         <a href="/panduan">Panduan</a>
+        <a href="/majalah">Majalah</a>
         <a href={`${base}#tentang`}>Tentang kami</a>
       </nav>
       <div className="nav-right">
