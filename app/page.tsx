@@ -1,6 +1,7 @@
 import { Button } from './components/Button';
 import { Wordmark } from './components/Wordmark';
 import { ScrollReveal } from './components/ScrollReveal';
+import { MobileMenu } from './components/MobileMenu';
 
 const whatsappUrl = 'https://wa.me/601154498790?text=Hi%20Syrius%2C%20saya%20nak%20tempah%20bantal%20korporat%20berlogo';
 
@@ -43,7 +44,10 @@ export default function Home() {
     <header className="site-header"><div className="container nav">
       <a href="#utama" aria-label="Syrius, kembali ke atas"><Wordmark /></a>
       <nav aria-label="Navigasi utama"><a href="#cara">Cara tempahan</a><a href="#koleksi">Kegunaan</a><a href="#tentang">Tentang kami</a><a href="#faq">Soalan lazim</a></nav>
-      <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
+      <div className="nav-right">
+        <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
+        <MobileMenu />
+      </div>
     </div></header>
 
     <section className="bento" id="utama" tabIndex={-1}><div className="container bento-grid">
