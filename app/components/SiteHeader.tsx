@@ -11,9 +11,9 @@ export function SiteHeader({ base = '' }: Props) {
     <header className="site-header"><div className="container nav">
       <a href={base || '#utama'} aria-label="Syrius, kembali ke atas"><Wordmark /></a>
       <nav aria-label="Navigasi utama">
-        <a href={`${base}#cara`}>Cara tempahan</a>
-        <a href={`${base}#koleksi`}>Kegunaan</a>
         <a href={`${base}#tentang`}>Tentang kami</a>
+        <a href={`${base}#koleksi`}>Kegunaan</a>
+        <a href={`${base}#cara`}>Cara tempahan</a>
         <a href={`${base}#faq`}>Soalan lazim</a>
         <a href="/panduan">Panduan</a>
       </nav>
