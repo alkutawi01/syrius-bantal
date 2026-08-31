@@ -1,4 +1,5 @@
 import { Wordmark } from './components/Wordmark';
+import { whatsappUrl } from './lib/whatsapp';
 
 export default function NotFound() {
   return <main className="not-found">
@@ -9,7 +10,7 @@ export default function NotFound() {
       <p className="lede">Pautan yang anda ikuti mungkin salah atau sudah tidak wujud. Jom kembali ke laman utama, atau hubungi kami terus.</p>
       <div className="hero-actions">
         <a className="button button--white button--md" href="/">Kembali ke laman utama</a>
-        <a className="text-link" href="https://wa.me/601154498790" target="_blank" rel="noreferrer">Hubungi WhatsApp <span aria-hidden="true">↗</span></a>
+        <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi WhatsApp <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </main>;
