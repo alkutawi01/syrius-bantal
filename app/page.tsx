@@ -54,6 +54,7 @@ export default function Home() {
         <figcaption lang="en"><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
 
+      <h2 className="sr-only">Sebab pilih Syrius</h2>
       {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" style={{ gridArea: `val${i + 1}`, transitionDelay: `${i * 80}ms` }} data-reveal key={title}>
         <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
       </div>)}
@@ -64,7 +65,7 @@ export default function Home() {
       </div>
 
       <div className="bento-tile bento-steps" id="cara" data-reveal>
-        <p className="eyebrow">CARA TEMPAHAN</p>
+        <h2 className="eyebrow">CARA TEMPAHAN</h2>
         <div className="bento-steps-row">{steps.map(([number, title, text, icon]) => <div key={number}><span className="dot">{icon}</span><b className="step-number">{number}</b><h3>{title}</h3><p>{text}</p></div>)}</div>
       </div>
     </div></section>
