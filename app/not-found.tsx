@@ -1,0 +1,16 @@
+import { Wordmark } from './components/Wordmark';
+
+export default function NotFound() {
+  return <main className="not-found">
+    <div className="container not-found-inner">
+      <a href="/" aria-label="Syrius, kembali ke laman utama"><Wordmark /></a>
+      <p className="eyebrow">RALAT 404</p>
+      <h1>Muka surat ini<br />tidak dijumpai.</h1>
+      <p className="lede">Pautan yang anda ikuti mungkin salah atau sudah tidak wujud. Jom kembali ke laman utama, atau hubungi kami terus.</p>
+      <div className="hero-actions">
+        <a className="button button--white button--md" href="/">Kembali ke laman utama</a>
+        <a className="text-link" href="https://wa.me/601154498790" target="_blank" rel="noreferrer">Hubungi WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </main>;
+}
