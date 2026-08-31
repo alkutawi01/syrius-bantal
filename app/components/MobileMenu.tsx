@@ -10,23 +10,34 @@ const links = [
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     if (!open) return;
     firstLinkRef.current?.focus();
+
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setOpen(false);
         toggleRef.current?.focus();
       }
     };
+    const onPointerDown = (e: PointerEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
     document.addEventListener('keydown', onKeyDown);
-    return () => document.removeEventListener('keydown', onKeyDown);
+    document.addEventListener('pointerdown', onPointerDown);
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('pointerdown', onPointerDown);
+    };
   }, [open]);
 
-  return <div className="mobile-menu">
+  return <div className="mobile-menu" ref={containerRef}>
     <button ref={toggleRef} className="mobile-menu-toggle" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-menu-panel" aria-label={open ? 'Tutup menu' : 'Buka menu'}>
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
         {open
