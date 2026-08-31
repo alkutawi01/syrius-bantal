@@ -5,9 +5,9 @@ type Props = { base?: string };
 
 export function MobileMenu({ base = '' }: Props) {
   const links = [
-    [`${base}#tentang`, 'Tentang kami'],
-    [`${base}#koleksi`, 'Kegunaan'],
     [`${base}#cara`, 'Cara tempahan'],
+    [`${base}#koleksi`, 'Kegunaan'],
+    [`${base}#tentang`, 'Tentang kami'],
     [`${base}#faq`, 'Soalan lazim'],
     ['/panduan', 'Panduan'],
   ];
