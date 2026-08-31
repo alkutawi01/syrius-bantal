@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 const title = 'Syrius — Wear Your Vision';
@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     images: ['/syrius-corporate-pillow-blank.jpg'],
   },
 };
+
+export const viewport: Viewport = {
+  themeColor: '#020333',
+};
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
