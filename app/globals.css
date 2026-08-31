@@ -112,10 +112,6 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 .faq-item[open] .faq-icon { transform: rotate(45deg); }
 .faq-item p { color: var(--text); font-size: 14px; line-height: 1.6; margin: 14px 0 0; max-width: 620px; }
 
-.marquee { background: var(--navy); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; overflow: hidden; padding: 16px 0; white-space: nowrap; }
-.marquee div { animation: move 28s linear infinite; display: inline-block; }
-@keyframes move { to { transform: translateX(-50%); } }
-
 .statement { background: var(--navy); color: rgba(255,255,255,.85); padding: 100px 0; }
 .statement-grid { align-items: start; display: grid; gap: 36px; grid-template-columns: .55fr 1.4fr .75fr; }
 .statement .eyebrow { color: rgba(255,255,255,.5); }
