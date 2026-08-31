@@ -7,9 +7,9 @@ export function MobileMenu({ base = '' }: Props) {
   const links = [
     [`${base}#cara`, 'Cara tempahan'],
     [`${base}#koleksi`, 'Kegunaan'],
-    [`${base}#tentang`, 'Tentang kami'],
     [`${base}#faq`, 'Soalan lazim'],
     ['/panduan', 'Panduan'],
+    [`${base}#tentang`, 'Tentang kami'],
   ];
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);

@@ -13,9 +13,9 @@ export function SiteHeader({ base = '' }: Props) {
       <nav aria-label="Navigasi utama">
         <a href={`${base}#cara`}>Cara tempahan</a>
         <a href={`${base}#koleksi`}>Kegunaan</a>
-        <a href={`${base}#tentang`}>Tentang kami</a>
         <a href={`${base}#faq`}>Soalan lazim</a>
         <a href="/panduan">Panduan</a>
+        <a href={`${base}#tentang`}>Tentang kami</a>
       </nav>
       <div className="nav-right">
         <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
