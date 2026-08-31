@@ -32,7 +32,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Syrius',
   description,
-  telephone: '+60115449 8790',
+  telephone: '+60 11-5449 8790',
   email: 'syriusmalaysia@gmail.com',
   address: {
     '@type': 'PostalAddress',
