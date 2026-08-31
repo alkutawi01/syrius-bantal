@@ -64,6 +64,16 @@ export default function Panduan() {
         </div>
       </div>
 
+      <div style={{ maxWidth: 700, marginBottom: 'var(--s7)' }} data-reveal>
+        <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Berapa banyak unit patut ditempah?</h2>
+        <p>Oleh sebab tiada kuantiti minimum yang tinggi, tempahan boleh dibuat mengikut bilangan sebenar yang anda perlukan. Sebagai panduan umum sebelum menghubungi kami:</p>
+        <ul style={{ paddingLeft: 20, margin: '16px 0', display: 'grid', gap: 10 }}>
+          <li><b>Kira bilangan penerima sebenar</b> — jumlah staf, tetamu acara atau pelanggan yang akan menerima, bukan anggaran kasar.</li>
+          <li><b>Pertimbangkan sedikit lebihan</b> — sesetengah organisasi menambah beberapa unit tambahan untuk staf baru atau gantian, tetapi ini pilihan anda sepenuhnya, bukan syarat.</li>
+          <li><b>Sahkan kuantiti sebelum reka bentuk dimuktamadkan</b> — supaya sebut harga dan tempoh siap yang kami berikan tepat mengikut jumlah akhir.</li>
+        </ul>
+      </div>
+
       <div style={{ marginBottom: 'var(--s7)' }}>
         <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Menyediakan logo dan reka bentuk</h2>
         <p data-reveal style={{ maxWidth: 700 }}>Untuk memastikan hasil cetakan setepat mungkin dengan identiti jenama anda, berikut beberapa perkara yang membantu proses semakan reka bentuk berjalan lancar:</p>
