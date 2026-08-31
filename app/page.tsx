@@ -36,6 +36,7 @@ const faqJsonLd = {
 
 export default function Home() {
   return <main>
+    <a className="skip-link" href="#utama">Langkau ke kandungan utama</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <ScrollReveal />
     <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Pillows</span><a href="tel:+601154498790">+60 11-5449 8790</a></div></div>
@@ -45,7 +46,7 @@ export default function Home() {
       <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
     </div></header>
 
-    <section className="bento" id="utama"><div className="container bento-grid">
+    <section className="bento" id="utama" tabIndex={-1}><div className="container bento-grid">
       <div className="bento-tile bento-hero">
         <p className="eyebrow">BRANDED COMFORT, MADE TO GIFT</p>
         <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
