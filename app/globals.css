@@ -143,8 +143,8 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
 .footer-grid > div > p { color: rgba(255,255,255,.55); font-size: 13px; max-width: 250px; margin-top: 16px; }
 .footer-grid a { display: block; font-size: 13px; margin: 7px 0; color: rgba(255,255,255,.85); transition: color .2s; }
 .footer-grid a:hover { color: #fff; }
-.footer-label { color: rgba(255,255,255,.4) !important; font-size: 10px !important; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.copyright { border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: .02em; margin-top: 45px; padding-top: 17px; }
+.footer-label { color: rgba(255,255,255,.55) !important; font-size: 10px !important; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.copyright { border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.55); font-size: 11px; letter-spacing: .02em; margin-top: 45px; padding-top: 17px; }
 .copyright span { float: right; }
 
 .fab-whatsapp { position: fixed; right: 22px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 26px rgba(0,0,0,.25); z-index: 40; transition: transform .2s; }
