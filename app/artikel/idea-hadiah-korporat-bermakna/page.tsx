@@ -48,7 +48,7 @@ export default function Artikel() {
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
       <p className="eyebrow" data-reveal>ARTIKEL</p>
       <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(28px, 4vw, 40px)', margin: '0 0 20px' }} data-reveal>
-        Kenapa hadiah korporat <em style={{ fontStyle: 'normal' }}>functional</em> lebih berkesan?
+        Kenapa hadiah korporat <em lang="en" style={{ fontStyle: 'normal' }}>functional</em> lebih berkesan?
       </h1>
       <p className="lede" data-reveal style={{ marginTop: 0 }}>
         Ramai organisasi masih memilih cenderamata generik seperti pen, buku nota atau beg plastik semasa merancang hadiah untuk staf, pelanggan atau tetamu acara. Namun barang yang jarang digunakan selepas acara tamat, jarang jugalah ia mengingatkan penerima tentang jenama anda.
