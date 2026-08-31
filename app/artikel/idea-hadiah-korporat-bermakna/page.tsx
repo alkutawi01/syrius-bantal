@@ -4,14 +4,26 @@ import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
 import { whatsappUrl } from '../../lib/whatsapp';
 
-export const metadata = {
-  title: 'Kenapa Hadiah Korporat Functional Lebih Berkesan? — Syrius',
-  description: 'Hadiah korporat yang berguna dalam kehidupan seharian lebih diingati berbanding cenderamata sekali guna. Ini sebab dan cara memilihnya.',
+const title = 'Kenapa Hadiah Korporat Functional Lebih Berkesan? — Syrius';
+const description = 'Hadiah korporat yang berguna dalam kehidupan seharian lebih diingati berbanding cenderamata sekali guna. Ini sebab dan cara memilihnya.';
+
+export const metadata = { title, description };
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Kenapa hadiah korporat functional lebih berkesan?',
+  description,
+  image: '/syrius-corporate-pillow-blank.jpg',
+  datePublished: '2026-08-31',
+  author: { '@type': 'Organization', name: 'Syrius' },
+  publisher: { '@type': 'Organization', name: 'Syrius' },
 };
 
 export default function Artikel() {
   return <main>
     <a className="skip-link" href="#artikel">Langkau ke kandungan utama</a>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     <ScrollReveal />
     <SiteHeader base="/" />
 
