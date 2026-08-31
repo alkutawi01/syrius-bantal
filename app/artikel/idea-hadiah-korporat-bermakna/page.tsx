@@ -7,7 +7,25 @@ import { whatsappUrl } from '../../lib/whatsapp';
 const title = 'Kenapa Hadiah Korporat Functional Lebih Berkesan? — Syrius';
 const description = 'Hadiah korporat yang berguna dalam kehidupan seharian lebih diingati berbanding cenderamata sekali guna. Ini sebab dan cara memilihnya.';
 
-export const metadata = { title, description };
+export const metadata = {
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: 'article',
+    publishedTime: '2026-08-31',
+    locale: 'ms_MY',
+    siteName: 'Syrius',
+    images: [{ url: '/syrius-corporate-pillow-blank.jpg', width: 1600, height: 1067, alt: 'Bantal sublimasi korporat Syrius' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: ['/syrius-corporate-pillow-blank.jpg'],
+  },
+};
 
 const articleJsonLd = {
   '@context': 'https://schema.org',

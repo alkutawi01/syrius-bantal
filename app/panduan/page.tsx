@@ -4,9 +4,26 @@ import { SiteHeader } from '../components/SiteHeader';
 import { SiteFooter } from '../components/SiteFooter';
 import { whatsappUrl } from '../lib/whatsapp';
 
+const title = 'Panduan Menempah Bantal Korporat — Syrius';
+const description = 'Panduan ringkas menempah bantal sublimasi korporat: bila sesuai digunakan, cara penyediaan logo, dan langkah tempahan bersama Syrius.';
+
 export const metadata = {
-  title: 'Panduan Menempah Bantal Korporat — Syrius',
-  description: 'Panduan ringkas menempah bantal sublimasi korporat: bila sesuai digunakan, cara penyediaan logo, dan langkah tempahan bersama Syrius.',
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: 'website',
+    locale: 'ms_MY',
+    siteName: 'Syrius',
+    images: [{ url: '/syrius-corporate-pillow-blank.jpg', width: 1600, height: 1067, alt: 'Bantal sublimasi korporat Syrius' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: ['/syrius-corporate-pillow-blank.jpg'],
+  },
 };
 
 const occasions = [
