@@ -85,7 +85,7 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 .bento-icon svg { width: 18px; height: 18px; }
 .bento-value p { color: var(--text); font-size: 13.5px; margin: 0; }
 
-.bento-fact { background: var(--mist); padding: 26px; display: flex; flex-direction: row; align-items: center; gap: 18px; }
+.bento-fact { grid-area: fact; background: var(--mist); padding: 26px; display: flex; flex-direction: row; align-items: center; gap: 18px; }
 .fact { display: flex; gap: 12px; align-items: flex-start; flex: 1; }
 .fact svg { width: 24px; height: 24px; color: var(--navy); flex-shrink: 0; }
 .fact b { display: block; color: var(--ink); font-size: 13.5px; }
