@@ -32,6 +32,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Syrius',
   description,
+  image: '/syrius-corporate-pillow-blank.jpg',
   telephone: '+60 11-5449 8790',
   email: 'syriusmalaysia@gmail.com',
   address: {
