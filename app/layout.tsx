@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ms_MY',
     siteName: 'Syrius',
-    images: [{ url: '/syrius-corporate-pillow-blank.jpg', width: 1600, height: 1067, alt: 'Bantal sublimasi korporat Syrius' }],
+    images: [{ url: '/syrius-corporate-pillow-blank.jpg', width: 1600, height: 1600, alt: 'Bantal sublimasi korporat Syrius' }],
   },
   twitter: {
     card: 'summary_large_image',
