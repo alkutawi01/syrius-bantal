@@ -77,7 +77,7 @@ export default function Artikel() {
         </ul>
       </div>
 
-      <p data-reveal style={{ marginTop: 32 }}>Bantal korporat Syrius dicetak menggunakan teknik sublimasi ini. <a className="text-link" href="/panduan">Lihat panduan menempah <span aria-hidden="true">→</span></a></p>
+      <p data-reveal style={{ marginTop: 32 }}>Bantal korporat Syrius dicetak menggunakan teknik sublimasi ini. <a className="text-link text-link--right" href="/panduan">Lihat panduan menempah <span aria-hidden="true">→</span></a></p>
     </div></article>
 
     <SiteFooter />
