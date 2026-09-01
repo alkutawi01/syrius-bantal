@@ -15,6 +15,7 @@ export const metadata = {
     description,
     type: 'article',
     publishedTime: '2026-08-31',
+    modifiedTime: '2026-08-31',
     locale: 'ms_MY',
     siteName: 'Syrius',
     images: [{ url: '/syrius-corporate-pillow-blank.jpg', width: 1600, height: 1600, alt: 'Bantal sublimasi korporat Syrius' }],
