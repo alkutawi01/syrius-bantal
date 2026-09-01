@@ -67,6 +67,7 @@ const jsonLd = {
         postalCode: '28400',
         addressCountry: 'MY',
       },
+      areaServed: 'Pahang',
       parentOrganization: { '@type': 'Organization', name: 'Syrius' },
       makesOffer: productOffer,
     },
