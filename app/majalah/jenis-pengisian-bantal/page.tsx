@@ -69,8 +69,9 @@ export default function Artikel() {
         </div>)}
       </div>
 
-      <div data-reveal style={{ overflowX: 'auto' }}>
+      <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 14px' }}>Ringkasan perbandingan</h2>
+        <div className="table-scroll">
         <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 480, fontSize: 13.5 }}>
           <thead>
             <tr style={{ borderBottom: '2px solid var(--line)' }}>
@@ -87,6 +88,7 @@ export default function Artikel() {
             </tr>)}
           </tbody>
         </table>
+        </div>
       </div>
 
       <div data-reveal>
