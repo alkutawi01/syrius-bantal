@@ -1,5 +1,5 @@
 import { Wordmark } from './Wordmark';
-import { whatsappUrl } from '../lib/whatsapp';
+import { whatsappUrl, whatsappPahangUrl } from '../lib/whatsapp';
 
 export function SiteFooter() {
   return <>
@@ -17,7 +17,7 @@ export function SiteFooter() {
       </div>
       <div>
         <p className="footer-label">PAHANG</p>
-        <a href="tel:+601169872708">+60 11-6987 2708</a>
+        <a href={whatsappPahangUrl} target="_blank" rel="noreferrer">+60 11-6987 2708<span className="sr-only"> (buka di tab baharu)</span></a>
         <a href="mailto:syriuspahang@gmail.com">syriuspahang@gmail.com</a>
         <a href="https://www.google.com/maps/search/?api=1&query=No.+9%2C+Tingkat+1%2C+Jalan+Star+City+1%2C+Mentakab+Star+City%2C+28400+Mentakab%2C+Pahang" target="_blank" rel="noreferrer">No. 9, Tingkat 1, Jalan Star City 1<br />Mentakab Star City, 28400 Mentakab.<span className="sr-only"> (buka di tab baharu)</span></a>
       </div>
