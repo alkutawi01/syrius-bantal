@@ -87,6 +87,10 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 
 .bento-value { border: 1px solid var(--line); background: #fff; padding: 26px; display: flex; flex-direction: column; }
 
+.occasion-grid { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); margin-top: 24px; }
+@media (max-width: 900px) { .occasion-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) { .occasion-grid { grid-template-columns: 1fr; } }
+
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0; }
 .stat-card { border: 1px solid var(--line); background: var(--mist); padding: 20px 18px; display: flex; flex-direction: column; gap: 6px; }
 .stat-number { color: var(--navy); font-weight: 800; letter-spacing: -.02em; font-size: 28px; margin: 0; }

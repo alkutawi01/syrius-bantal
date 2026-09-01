@@ -75,7 +75,7 @@ export default function Panduan() {
 
       <div style={{ marginBottom: 'var(--s7)' }}>
         <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: 0 }}>Bila sesuai menggunakan bantal korporat?</h2>
-        <div className="bento-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateAreas: 'none', marginTop: 24 }}>
+        <div className="occasion-grid">
           {occasions.map(([title, text, icon], i) => <div className="bento-tile bento-value" data-reveal style={{ transitionDelay: `${i * 80}ms` }} key={title}>
             <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
           </div>)}
