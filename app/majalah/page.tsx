@@ -30,9 +30,26 @@ const articles = [
   ['idea-hadiah-korporat-bermakna', 'Mengapa hadiah korporat yang berguna lebih berkesan dalam membina ingatan jenama?', 'Kajian industri produk promosi menunjukkan hadiah yang benar-benar berguna lebih diingati berbanding cenderamata sekali guna. Rujukan, prinsip dan cara memilih.'],
 ];
 
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: articles.map(([slug, articleTitle], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: articleTitle,
+      url: `/majalah/${slug}`,
+    })),
+  },
+};
+
 export default function Majalah() {
   return <main>
     <a className="skip-link" href="#majalah">Langkau ke kandungan utama</a>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
     <ScrollReveal />
     <SiteHeader base="/" />
 
