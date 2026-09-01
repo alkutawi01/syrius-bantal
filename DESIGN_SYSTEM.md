@@ -1,4 +1,4 @@
-# Syrius Design System v1.5
+# Syrius Design System v1.6
 
 ## Direction
 
@@ -76,6 +76,10 @@ Newer patterns established since v1.2, for consistency when adding more pages:
 
 Known blocker, not yet resolvable: there is no `sitemap.ts` or `metadataBase`, because the real production domain for this Cloudflare-deployed site isn't known (vinext's only automatic fallback is Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, irrelevant here). Ask Izzat for the production URL before adding either — do not guess a domain.
 
-**Security headers** are set in `next.config.ts`'s `headers()` (confirmed supported by vinext, unlike some Next.js server APIs) and apply to every route: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` (camera/microphone/geolocation/payment/usb all disabled — this site uses none of them), and `Strict-Transport-Security`. **Content-Security-Policy is deliberately not set.** It needs careful `script-src`/`style-src` tuning first: every page inline-renders `<script type="application/ld+json">` for structured data, and every component uses React `style={{}}` (compiles to inline `style="..."` attributes) throughout — a naive CSP could silently break either without an obvious visual failure (structured data just stops being crawled, no error banner). Don't add a CSP without testing that both survive it.
+**Security headers** are set in `next.config.ts`'s `headers()` (confirmed supported by vinext, unlike some Next.js server APIs) and apply to every route: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` (camera/microphone/geolocation/payment/usb all disabled — this site uses none of them), `Strict-Transport-Security`, and `Content-Security-Policy` — **the CSP is enforced only when `NODE_ENV === 'production'`**, gated in code, not just tested once. Two things forced that shape, both confirmed by testing against the real `vinext build` + `vinext start` output, not just `vinext dev`:
+- `script-src` needs `'unsafe-inline'` — vinext's RSC hydration injects many inline `<script>` tags itself (not just this project's own JSON-LD), and a strict nonce/hash policy isn't feasible without deeper framework support.
+- `vinext dev`'s Vite/HMR client uses `eval()`, which the policy correctly has no allowance for. That's a dev-only artifact — it never appears against the production build — so the CSP is skipped entirely in development rather than being weakened with `'unsafe-eval'`.
+
+If you touch this policy, re-verify against `vinext build && npx vinext start` (not just `vinext dev`): check all routes for violations, that the mobile menu is still interactive, that Google Fonts still resolves (computed `font-family` should say "Plus Jakarta Sans", not fall back to Arial), and that both JSON-LD `<script>` tags still parse.
 
 **Content arrays that mix plain strings with inline JSX** (icons, fragments) — the pattern used for `values`/`steps`/`occasions`/`articles`/etc. across every page — need an explicit tuple type annotation (e.g. `const values: [string, string, ReactNode][] = [...]`). Without it, TypeScript widens each destructured position to a `string | Element` union, which silently fails `key={firstElement}` under `strict: true` (the project's own `npm run build` doesn't catch this — only a standalone `npx tsc --noEmit` does). Type any new array of this shape the same way.
