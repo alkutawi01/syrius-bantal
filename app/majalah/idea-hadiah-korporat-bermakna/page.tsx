@@ -34,6 +34,7 @@ const articleJsonLd = {
   description,
   image: '/syrius-corporate-pillow-blank.jpg',
   datePublished: '2026-08-31',
+  dateModified: '2026-08-31',
   author: { '@type': 'Organization', name: 'Syrius' },
   publisher: { '@type': 'Organization', name: 'Syrius' },
 };
