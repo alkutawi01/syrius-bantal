@@ -96,10 +96,10 @@ export default function Panduan() {
         <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Menyediakan logo dan reka bentuk</h2>
         <p data-reveal style={{ maxWidth: 700 }}>Untuk memastikan hasil cetakan setepat mungkin dengan identiti jenama anda, berikut beberapa perkara yang membantu proses semakan reka bentuk berjalan lancar:</p>
         <div className="faq-list" style={{ marginTop: 24 }}>
-          {artworkTips.map(([title, text, icon]) => <details className="faq-item" open key={title} data-reveal>
-            <summary style={{ cursor: 'default', justifyContent: 'flex-start', gap: 14 }}><span className="bento-icon" style={{ margin: 0, flexShrink: 0 }}>{icon}</span>{title}</summary>
+          {artworkTips.map(([title, text, icon]) => <div className="faq-item" key={title} data-reveal>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, fontWeight: 700, color: 'var(--ink)', fontSize: 15 }}><span className="bento-icon" style={{ margin: 0, flexShrink: 0 }}>{icon}</span>{title}</div>
             <p style={{ marginLeft: 52 }}>{text}</p>
-          </details>)}
+          </div>)}
         </div>
       </div>
 
