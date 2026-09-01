@@ -27,9 +27,9 @@ export const metadata = {
 };
 
 const occasions = [
-  ['Hadiah pasukan & staf', 'Sebagai tanda penghargaan untuk staf sempena hari jadi syarikat, pencapaian pasukan atau cuti perayaan.'],
-  ['Cenderahati acara & persidangan', 'Diberikan kepada tetamu atau peserta sebagai kenangan yang lebih tahan lama berbanding cenderamata biasa.'],
-  ['Hadiah pelanggan & rakan strategik', 'Untuk mengukuhkan hubungan perniagaan dengan sesuatu yang membawa identiti jenama anda.'],
+  ['Hadiah pasukan & staf', 'Sebagai tanda penghargaan untuk staf sempena hari jadi syarikat, pencapaian pasukan atau cuti perayaan.', <svg key="o1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" /><path d="M3.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /><circle cx="17" cy="9" r="2.3" stroke="currentColor" strokeWidth="1.5" /><path d="M14.5 20c.3-2.7 2-4.8 4.3-4.8 1.6 0 3 1 3.7 2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>],
+  ['Cenderahati acara & persidangan', 'Diberikan kepada tetamu atau peserta sebagai kenangan yang lebih tahan lama berbanding cenderamata biasa.', <svg key="o2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>],
+  ['Hadiah pelanggan & rakan strategik', 'Untuk mengukuhkan hubungan perniagaan dengan sesuatu yang membawa identiti jenama anda.', <svg key="o3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.6" /><circle cx="17" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.6" /><path d="M10.2 12h3.6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>],
 ];
 
 const artworkTips = [
@@ -76,8 +76,8 @@ export default function Panduan() {
       <div style={{ marginBottom: 'var(--s7)' }}>
         <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: 0 }}>Bila sesuai menggunakan bantal korporat?</h2>
         <div className="bento-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateAreas: 'none', marginTop: 24 }}>
-          {occasions.map(([title, text], i) => <div className="bento-tile bento-value" data-reveal style={{ transitionDelay: `${i * 80}ms` }} key={title}>
-            <h3>{title}</h3><p>{text}</p>
+          {occasions.map(([title, text, icon], i) => <div className="bento-tile bento-value" data-reveal style={{ transitionDelay: `${i * 80}ms` }} key={title}>
+            <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
           </div>)}
         </div>
       </div>
