@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react';
 import { Button } from './components/Button';
 import { ScrollReveal } from './components/ScrollReveal';
 import { SiteHeader } from './components/SiteHeader';
 import { SiteFooter } from './components/SiteFooter';
 import { whatsappUrl } from './lib/whatsapp';
 
-const values = [
+const values: [string, string, ReactNode][] = [
   ['Pengalaman sejak 2011', 'Dihasilkan oleh pasukan sublimasi Syrius yang telah dipercayai sejak 2011.', <svg key="v1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.9 6.4L22 9l-5 5.2L18.2 22 12 18.3 5.8 22 7 14.2 2 9l7.1-.6L12 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>],
   ['Sesuai untuk tempahan kuantiti kecil', 'Tidak perlu menempah dalam jumlah besar untuk mendapatkan standard kualiti yang sama.', <svg key="v2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><path d="M3 8v8l9 4 9-4V8M12 12v8" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
   ['Reka bentuk mengikut jenama anda', 'Kami menyesuaikan logo, warna dan susun atur mengikut identiti visual organisasi anda.', <svg key="v3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.7 2-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H16a4 4 0 0 0 4-4c0-4.4-3.6-8-8-8Z" stroke="currentColor" strokeWidth="1.5" /><circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" /><circle cx="10.5" cy="7" r="1.1" fill="currentColor" /><circle cx="15" cy="8" r="1.1" fill="currentColor" /></svg>],
@@ -18,7 +19,7 @@ const faqs = [
   ['Berapa lama tempoh penyediaan tempahan?', 'Bergantung pada kuantiti dan kerumitan reka bentuk. Hubungi kami melalui WhatsApp untuk anggaran tempoh yang tepat mengikut keperluan anda.'],
 ];
 
-const steps = [
+const steps: [string, string, string, ReactNode][] = [
   ['01', 'Kongsi keperluan', 'Beritahu kami jenis acara, jumlah unit dan tujuan bantal korporat anda.', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
   ['02', 'Hantar logo', 'Hantar logo, warna jenama atau panduan identiti visual melalui WhatsApp.', <svg key="i2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['03', 'Sahkan tempahan', 'Kami akan menyemak reka bentuk dan menyediakan sebut harga sebelum proses cetakan dimulakan.', <svg key="i3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],

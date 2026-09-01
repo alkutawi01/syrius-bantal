@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { ScrollReveal } from '../../components/ScrollReveal';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
@@ -39,7 +40,7 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: 'Syrius', logo: { '@type': 'ImageObject', url: '/syrius-logo.png' } },
 };
 
-const fillings = [
+const fillings: [string, ReactNode, ReactNode, ReactNode, string, string][] = [
   ['poliester', 'Gentian poliester', 'Jenis paling biasa dan berpatutan. Ringan dan lembut pada mulanya, tetapi cenderung menjadi kempis dan kurang sokongan selepas kira-kira satu hingga dua tahun penggunaan. Kebanyakannya boleh dibasuh dan dikeringkan menggunakan mesin.', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 8c2-2 4 2 6 0s4-2 6 0 4 2 6 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /><path d="M3 14c2-2 4 2 6 0s4-2 6 0 4 2 6 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /><path d="M3 20c2-2 4 2 6 0s4-2 6 0 4 2 6 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>, '1–2 tahun', 'Ringan, murah, mudah dibasuh'],
   ['bulu', <>Bulu angsa/itik <em lang="en" style={{ fontStyle: 'normal' }}>(down/feather)</em></>, <>Sangat lembut dan mengekalkan kembungan (<em lang="en" style={{ fontStyle: 'normal' }}>loft</em>) lebih lama berbanding gentian sintetik — dianggarkan sehingga tiga kali ganda lebih lama. Tahan sekitar dua hingga tiga tahun sebelum kehilangan sokongan, tetapi boleh mencetuskan alahan pada sesetengah individu.</>, <svg key="i2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21V9M12 9c0-3 2-5 6-6-1 4-3 6-6 6Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M12 14c-3 0-5-1-6-3 3-1 5 0 6 3Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" /></svg>, '2–3 tahun', 'Sangat lembut, risiko alahan'],
   ['kapok', 'Kapok', 'Gentian berasaskan tumbuhan yang ringan dan lembut, sering dijadikan alternatif vegan kepada bulu. Tahan lama dan tidak mudah mampat, tetapi memerlukan pengemasan berkala supaya tidak berkelompok.', <svg key="i3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c4 3 6 7 4 12-3-1-6-4-6-9 0-1 1-2 2-3Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M12 21v-9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" /></svg>, 'Tahan lama', 'Vegan, perlu kerap digemburkan'],

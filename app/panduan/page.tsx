@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { Button } from '../components/Button';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { SiteHeader } from '../components/SiteHeader';
@@ -27,19 +28,19 @@ export const metadata: Metadata = {
   },
 };
 
-const occasions = [
+const occasions: [string, string, ReactNode][] = [
   ['Hadiah pasukan & staf', 'Sebagai tanda penghargaan untuk staf sempena hari jadi syarikat, pencapaian pasukan atau cuti perayaan.', <svg key="o1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" /><path d="M3.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /><circle cx="17" cy="9" r="2.3" stroke="currentColor" strokeWidth="1.5" /><path d="M14.5 20c.3-2.7 2-4.8 4.3-4.8 1.6 0 3 1 3.7 2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>],
   ['Cenderahati acara & persidangan', 'Diberikan kepada tetamu atau peserta sebagai kenangan yang lebih tahan lama berbanding cenderamata biasa.', <svg key="o2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>],
   ['Hadiah pelanggan & rakan strategik', 'Untuk mengukuhkan hubungan perniagaan dengan sesuatu yang membawa identiti jenama anda.', <svg key="o3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.6" /><circle cx="17" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.6" /><path d="M10.2 12h3.6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>],
 ];
 
-const artworkTips = [
+const artworkTips: [string, string, ReactNode][] = [
   ['Format fail', 'Hantar logo dalam format vektor (AI, EPS, PDF) atau PNG berlatar belakang lutsinar dan beresolusi tinggi. Ini memastikan logo kekal tajam apabila dicetak.', <svg key="t1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="M14 3v5h5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>],
   ['Warna jenama', 'Sertakan kod warna rasmi jenama anda (HEX atau Pantone) supaya warna cetakan sepadan dengan identiti visual sedia ada.', <svg key="t2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.7 2-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H16a4 4 0 0 0 4-4c0-4.4-3.6-8-8-8Z" stroke="currentColor" strokeWidth="1.5" /><circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" /><circle cx="10.5" cy="7" r="1.1" fill="currentColor" /><circle cx="15" cy="8" r="1.1" fill="currentColor" /></svg>],
   ['Susun atur', 'Beritahu kami jika logo perlu diletakkan di satu bahagian sahaja atau berulang merentasi bantal, dan sama ada teks tambahan (contoh: nama acara) perlu disertakan.', <svg key="t3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /></svg>],
 ];
 
-const orderSteps = [
+const orderSteps: [string, ReactNode][] = [
   ['Hubungi kami melalui WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
   ['Hantar logo, kod warna jenama dan sebarang panduan identiti visual mengikut format di atas.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['Kami semak reka bentuk, sediakan sebut harga dan anggaran tempoh siap sebelum cetakan dimulakan.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],

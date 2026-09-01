@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { ScrollReveal } from '../../components/ScrollReveal';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-const steps = [
+const steps: [string, string, ReactNode][] = [
   ['Reka bentuk dicetak', 'Reka bentuk digital dicetak ke kertas pemindahan khas menggunakan dakwat sublimasi pepejal.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['Ditekan dengan haba', 'Kertas dan fabrik dimasukkan ke mesin penekan haba pada suhu sekitar 195–205 °C.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>],
   ['Dakwat menjadi gas', 'Haba menukar dakwat pepejal terus menjadi gas dan membuka liang halus fabrik.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
