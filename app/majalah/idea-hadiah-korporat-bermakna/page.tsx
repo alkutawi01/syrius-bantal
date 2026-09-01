@@ -53,7 +53,7 @@ export default function Artikel() {
     <SiteHeader base="/" />
 
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
-      <p className="eyebrow" data-reveal>MAJALAH</p>
+      <a className="eyebrow" href="/majalah" data-reveal>← MAJALAH</a>
       <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '0 0 20px' }} data-reveal>
         Mengapa hadiah korporat yang berguna lebih berkesan dalam membina <em style={{ fontStyle: 'normal' }}>ingatan jenama?</em>
       </h1>
