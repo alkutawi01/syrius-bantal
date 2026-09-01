@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Button } from '../components/Button';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { SiteHeader } from '../components/SiteHeader';
@@ -7,7 +8,7 @@ import { whatsappUrl } from '../lib/whatsapp';
 const title = 'Panduan Menempah Bantal Korporat — Syrius';
 const description = 'Panduan ringkas menempah bantal sublimasi korporat: bila sesuai digunakan, cara penyediaan logo, dan langkah tempahan bersama Syrius.';
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   openGraph: {

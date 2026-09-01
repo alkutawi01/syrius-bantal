@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ScrollReveal } from '../../components/ScrollReveal';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
@@ -5,7 +6,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 const title = 'Panduan Jenis Pengisian Bantal — Majalah Syrius';
 const description = 'Perbezaan gentian poliester, bulu, kapok dan buih memori sebagai pengisian bantal — dari segi keselesaan, ketahanan dan penjagaan.';
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   openGraph: {

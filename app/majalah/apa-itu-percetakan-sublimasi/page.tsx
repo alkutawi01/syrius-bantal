@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ScrollReveal } from '../../components/ScrollReveal';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
@@ -5,7 +6,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 const title = 'Apa Itu Percetakan Sublimasi? — Majalah Syrius';
 const description = 'Penjelasan ringkas proses percetakan sublimasi: bagaimana reka bentuk digital dipindahkan secara kekal ke atas fabrik menggunakan haba dan tekanan.';
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   openGraph: {

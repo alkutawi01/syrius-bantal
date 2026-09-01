@@ -1,7 +1,8 @@
+import type { Metadata } from 'next';
 import { Wordmark } from './components/Wordmark';
 import { whatsappUrl } from './lib/whatsapp';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Muka Surat Tidak Dijumpai — Syrius',
   description: 'Pautan yang anda ikuti mungkin salah atau sudah tidak wujud. Kembali ke laman utama Syrius atau hubungi kami terus.',
   robots: { index: false, follow: true },

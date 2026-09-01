@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Button } from '../../components/Button';
 import { ScrollReveal } from '../../components/ScrollReveal';
 import { SiteHeader } from '../../components/SiteHeader';
@@ -7,7 +8,7 @@ import { whatsappUrl } from '../../lib/whatsapp';
 const title = 'Mengapa Hadiah Korporat yang Berguna Lebih Berkesan? — Syrius';
 const description = 'Kajian industri produk promosi menunjukkan hadiah yang benar-benar berguna lebih diingati berbanding cenderamata sekali guna. Rujukan, prinsip dan cara memilih.';
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   openGraph: {

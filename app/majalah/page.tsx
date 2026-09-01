@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { SiteHeader } from '../components/SiteHeader';
 import { SiteFooter } from '../components/SiteFooter';
@@ -5,7 +6,7 @@ import { SiteFooter } from '../components/SiteFooter';
 const title = 'Majalah — Syrius';
 const description = 'Panduan, tip dan pengetahuan seputar bantal korporat, sublimasi dan tekstil daripada Syrius.';
 
-export const metadata = {
+export const metadata: Metadata = {
   title,
   description,
   openGraph: {
