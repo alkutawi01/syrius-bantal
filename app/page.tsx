@@ -12,10 +12,10 @@ const values = [
 
 const faqs = [
   ['Adakah kuantiti tempahan minimum tinggi?', 'Tidak. Tempahan tidak perlu bermula dalam jumlah besar untuk mendapatkan standard kualiti yang sama — sesuai untuk keperluan kecil seperti hadiah pasukan atau acara dalaman.'],
-  ['Bagaimana cara menempah?', 'Hubungi kami melalui WhatsApp, kongsi keperluan (jenis acara, jumlah unit dan tujuan), hantar logo dan warna jenama anda. Kami akan semak reka bentuk dan sediakan sebut harga sebelum cetakan bermula.'],
-  ['Bolehkah reka bentuk disesuaikan sepenuhnya ikut jenama kami?', 'Ya. Logo, warna dan susun atur disesuaikan mengikut identiti visual organisasi anda.'],
+  ['Bagaimana cara menempah?', 'Hubungi kami melalui WhatsApp, kongsi keperluan (jenis acara, jumlah unit dan tujuan), hantar logo dan warna jenama anda. Kami akan menyemak reka bentuk dan menyediakan sebut harga sebelum cetakan bermula.'],
+  ['Bolehkah reka bentuk disesuaikan sepenuhnya mengikut jenama kami?', 'Ya. Logo, warna dan susun atur disesuaikan mengikut identiti visual organisasi anda.'],
   ['Kawasan mana yang diliputi untuk penghantaran?', 'Kelantan dan Pahang. Studio kami di Kota Bharu.'],
-  ['Berapa lama tempoh penyediaan tempahan?', 'Bergantung pada kuantiti dan kerumitan reka bentuk. Hubungi kami di WhatsApp untuk anggaran tempoh yang tepat mengikut keperluan anda.'],
+  ['Berapa lama tempoh penyediaan tempahan?', 'Bergantung pada kuantiti dan kerumitan reka bentuk. Hubungi kami melalui WhatsApp untuk anggaran tempoh yang tepat mengikut keperluan anda.'],
 ];
 
 const steps = [
@@ -76,7 +76,7 @@ export default function Home() {
     <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Syrius membantu organisasi menterjemahkan identiti visual kepada hadiah korporat yang berguna dan bermakna untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
 
     <section className="section faq" id="faq"><div className="container">
-      <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>hubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
+      <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>menghubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
       <div className="faq-list">{faqs.map(([q, a]) => <details className="faq-item" key={q} data-reveal><summary>{q}<span className="faq-icon" aria-hidden="true">+</span></summary><p>{a}</p></details>)}</div>
     </div></section>
 

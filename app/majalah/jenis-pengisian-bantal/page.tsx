@@ -38,9 +38,9 @@ const articleJsonLd = {
 
 const fillings = [
   ['poliester', 'Gentian poliester', 'Jenis paling biasa dan berpatutan. Ringan dan lembut pada mulanya, tetapi cenderung menjadi kempis dan kurang sokongan selepas kira-kira satu hingga dua tahun penggunaan. Kebanyakannya boleh dibasuh dan dikeringkan menggunakan mesin.'],
-  ['bulu', <>Bulu angsa/itik <em lang="en" style={{ fontStyle: 'normal' }}>(down/feather)</em></>, <>Sangat lembut dan mengekalkan kembungan (<em lang="en" style={{ fontStyle: 'normal' }}>loft</em>) lebih lama berbanding gentian sintetik — dianggarkan sehingga tiga kali ganda tempohnya. Tahan sekitar dua hingga tiga tahun sebelum kehilangan sokongan, tetapi boleh mencetuskan alahan pada sesetengah individu.</>],
+  ['bulu', <>Bulu angsa/itik <em lang="en" style={{ fontStyle: 'normal' }}>(down/feather)</em></>, <>Sangat lembut dan mengekalkan kembungan (<em lang="en" style={{ fontStyle: 'normal' }}>loft</em>) lebih lama berbanding gentian sintetik — dianggarkan sehingga tiga kali ganda lebih lama. Tahan sekitar dua hingga tiga tahun sebelum kehilangan sokongan, tetapi boleh mencetuskan alahan pada sesetengah individu.</>],
   ['kapok', 'Kapok', 'Gentian berasaskan tumbuhan yang ringan dan lembut, sering dijadikan alternatif vegan kepada bulu. Tahan lama dan tidak mudah mampat, tetapi memerlukan pengemasan berkala supaya tidak berkelompok.'],
-  ['foam', <>Buih memori <em lang="en" style={{ fontStyle: 'normal' }}>(memory foam)</em></>, 'Bahan sintetik yang membentuk semula mengikut tekanan kepala dan leher, memberikan sokongan yang lebih spesifik. Kelemahannya, ia boleh menyerap dan menyimpan haba berbanding jenis pengisian lain.'],
+  ['foam', <>Buih memori <em lang="en" style={{ fontStyle: 'normal' }}>(memory foam)</em></>, 'Bahan sintetik yang berubah bentuk mengikut tekanan kepala dan leher, memberikan sokongan yang lebih spesifik. Kelemahannya, ia boleh menyerap dan menyimpan haba berbanding jenis pengisian lain.'],
 ];
 
 export default function Artikel() {

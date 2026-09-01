@@ -54,18 +54,18 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Bagaimana proses ini berfungsi</h2>
-        <p>Proses bermula dengan reka bentuk digital dicetak ke atas kertas pemindahan khas menggunakan dakwat sublimasi — dakwat yang berbentuk pepejal pada suhu bilik. Kertas ini kemudian diletakkan bersentuhan dengan fabrik dan dimasukkan ke dalam mesin penekan haba (<em lang="en" style={{ fontStyle: 'normal' }}>heat press</em>) pada suhu tinggi, biasanya sekitar 195–205°C, dengan tekanan yang tetap selama beberapa saat.</p>
-        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba turut membuka liang-liang halus pada fabrik, membolehkan gas dakwat meresap masuk. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, liang-liang tersebut menutup semula dan dakwat terperangkap secara kekal di dalam struktur fabrik.</p>
+        <p>Proses bermula apabila reka bentuk digital dicetak ke atas kertas pemindahan khas menggunakan dakwat sublimasi — dakwat yang berbentuk pepejal pada suhu bilik. Kertas ini kemudian diletakkan bersentuhan dengan fabrik dan dimasukkan ke dalam mesin penekan haba (<em lang="en" style={{ fontStyle: 'normal' }}>heat press</em>) pada suhu tinggi, biasanya sekitar 195–205 °C, dengan tekanan yang tetap selama beberapa saat.</p>
+        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba turut membuka liang-liang halus pada fabrik, membolehkan gas dakwat meresap masuk. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, liang-liang tersebut tertutup semula dan dakwat terperangkap secara kekal di dalam struktur fabrik.</p>
       </div>
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Kenapa fabrik poliester digunakan</h2>
-        <p>Kaedah ini hanya berkesan pada fabrik yang mengandungi poliester atau bahan bersalut polimer, kerana proses sublimasi bergantung pada tindak balas kimia antara dakwat gas dan struktur molekul poliester. Fabrik semula jadi seperti kapas tidak mempunyai struktur yang sesuai untuk menerima dakwat dengan cara ini, jadi hasil cetakan pada kapas biasanya pudar atau tidak jelas berbanding pada poliester.</p>
+        <p>Kaedah ini hanya berkesan pada fabrik yang mengandungi poliester atau bahan bersalut polimer, kerana proses sublimasi bergantung pada tindak balas kimia antara dakwat gas dan struktur molekul poliester. Fabrik semula jadi seperti kapas tidak mempunyai struktur yang sesuai untuk menerima dakwat dengan cara ini, jadi hasil cetakan pada kapas biasanya pudar atau tidak jelas berbanding dengan hasil cetakan pada poliester.</p>
       </div>
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Ciri hasil cetakan</h2>
-        <p>Oleh sebab dakwat menjadi sebahagian daripada gentian fabrik dan bukan lapisan di atas permukaannya, hasil cetakan sublimasi tidak retak, mengelupas atau luntur dengan cara yang sama seperti cetakan berasaskan lapisan permukaan (contohnya sablon skrin biasa). Ini menjadikannya sesuai untuk reka bentuk berwarna penuh dan corak yang merentasi keseluruhan permukaan produk, seperti pada bantal atau jersi bercetak penuh.</p>
+        <p>Oleh sebab dakwat menjadi sebahagian daripada gentian fabrik dan bukan lapisan di atas permukaannya, hasil cetakan sublimasi tidak retak, mengelupas atau luntur dengan cara yang sama seperti cetakan berasaskan lapisan permukaan (contohnya, sablon skrin biasa). Ini menjadikannya sesuai untuk reka bentuk berwarna penuh dan corak yang merentasi keseluruhan permukaan produk, seperti pada bantal atau jersi bercetak penuh.</p>
         <p>Setiap kaedah percetakan — sublimasi, DTF, DTG atau sablon — mempunyai kelebihan dan kesesuaian tersendiri bergantung pada jenis fabrik, kerumitan reka bentuk dan kuantiti tempahan. Tiada satu kaedah yang secara mutlak "terbaik" untuk semua situasi.</p>
       </div>
 

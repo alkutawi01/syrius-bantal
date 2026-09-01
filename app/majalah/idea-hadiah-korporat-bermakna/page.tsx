@@ -58,7 +58,7 @@ export default function Artikel() {
         Mengapa hadiah korporat yang berguna lebih berkesan dalam membina <em style={{ fontStyle: 'normal' }}>ingatan jenama?</em>
       </h1>
       <p className="lede" data-reveal style={{ marginTop: 0 }}>
-        Ramai organisasi masih memilih cenderamata generik seperti pen, buku nota atau beg plastik semasa merancang hadiah untuk staf, pelanggan atau tetamu acara. Barang yang jarang digunakan selepas sesuatu acara berakhir biasanya kurang berupaya untuk mengekalkan ingatan penerima terhadap jenama pemberinya. Persoalan sebenar bukan sekadar reka bentuk hadiah itu menarik atau tidak, tetapi sama ada ia benar-benar menjadi sebahagian daripada kehidupan seharian penerima.
+        Banyak organisasi masih memilih cenderamata generik seperti pen, buku nota atau beg plastik semasa merancang hadiah untuk staf, pelanggan atau tetamu acara. Barang yang jarang digunakan selepas sesuatu acara berakhir biasanya kurang berupaya untuk mengekalkan ingatan penerima terhadap jenama pemberinya. Persoalan sebenar bukan sekadar reka bentuk hadiah itu menarik atau tidak, tetapi sama ada ia benar-benar menjadi sebahagian daripada kehidupan seharian penerima.
       </p>
 
       <div data-reveal>
@@ -68,7 +68,7 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Apa yang dikatakan kajian industri</h2>
-        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati pengiklan atau jenama yang memberikan barang promosi kepada mereka. Kajian pengguna oleh Promotional Products Association International (PPAI) pula mendapati kira-kira sembilan daripada sepuluh responden dapat mengingati penjenamaan pada produk promosi yang diterima, termasuk selepas tempoh yang panjang.</p>
+        <p>Dakwaan ini bukan sekadar andaian pemasaran semata-mata. <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> terbitan Advertising Specialty Institute (ASI), yang meninjau hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah, mendapati 85% responden masih mengingati pengiklan atau jenama yang memberikan barang promosi kepada mereka. Kajian pengguna oleh Promotional Products Association International (PPAI) pula mendapati kira-kira sembilan daripada sepuluh responden dapat mengingati penjenamaan pada produk promosi yang diterima walaupun selepas tempoh yang panjang.</p>
 
         <p className="eyebrow" style={{ marginBottom: 8 }}>DAPATAN KAJIAN INDUSTRI</p>
         <div className="stat-grid" data-reveal>
