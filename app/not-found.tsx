@@ -12,7 +12,7 @@ export default function NotFound() {
       <div className="hero-actions">
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- same reason as above */}
         <a className="button button--white button--md" href="/">Kembali ke laman utama</a>
-        <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi WhatsApp <span aria-hidden="true">↗</span></a>
+        <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi WhatsApp <span aria-hidden="true">↗</span><span className="sr-only"> (buka di tab baharu)</span></a>
       </div>
     </div>
   </main>;
