@@ -27,25 +27,50 @@ export const viewport: Viewport = {
   themeColor: '#020333',
 };
 
+const productOffer = { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Bantal sublimasi korporat', image: '/syrius-corporate-pillow-blank.jpg' } };
+
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Syrius',
-  description,
-  image: '/syrius-corporate-pillow-blank.jpg',
-  logo: '/syrius-logo.png',
-  telephone: '+60 11-5449 8790',
-  email: 'syriusmalaysia@gmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'PT 428, Pusat Perniagaan Bandar Baru Tunjong',
-    addressLocality: 'Kota Bharu',
-    addressRegion: 'Kelantan',
-    postalCode: '16010',
-    addressCountry: 'MY',
-  },
-  areaServed: ['Kelantan', 'Pahang'],
-  makesOffer: { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Bantal sublimasi korporat', image: '/syrius-corporate-pillow-blank.jpg' } },
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      name: 'Syrius Malaysia',
+      description,
+      image: '/syrius-corporate-pillow-blank.jpg',
+      logo: '/syrius-logo.png',
+      telephone: '+60 11-5449 8790',
+      email: 'syriusmalaysia@gmail.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'PT 428, Pusat Perniagaan Bandar Baru Tunjong',
+        addressLocality: 'Kota Bharu',
+        addressRegion: 'Kelantan',
+        postalCode: '16010',
+        addressCountry: 'MY',
+      },
+      areaServed: ['Kelantan', 'Pahang'],
+      makesOffer: productOffer,
+    },
+    {
+      '@type': 'LocalBusiness',
+      name: 'Syrius Pahang',
+      description,
+      image: '/syrius-corporate-pillow-blank.jpg',
+      logo: '/syrius-logo.png',
+      telephone: '+60 11-6987 2708',
+      email: 'syriuspahang@gmail.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'No. 9, Tingkat 1, Jalan Star City 1, Mentakab Star City',
+        addressLocality: 'Mentakab',
+        addressRegion: 'Pahang',
+        postalCode: '28400',
+        addressCountry: 'MY',
+      },
+      parentOrganization: { '@type': 'Organization', name: 'Syrius' },
+      makesOffer: productOffer,
+    },
+  ],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
