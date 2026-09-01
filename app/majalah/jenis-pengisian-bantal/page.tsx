@@ -74,14 +74,14 @@ export default function Artikel() {
         <table style={{ borderCollapse: 'collapse', width: '100%', minWidth: 480, fontSize: 13.5 }}>
           <thead>
             <tr style={{ borderBottom: '2px solid var(--line)' }}>
-              <th style={{ textAlign: 'left', padding: '8px 12px 8px 0', color: 'var(--ink)' }}>Jenis pengisian</th>
-              <th style={{ textAlign: 'left', padding: '8px 12px', color: 'var(--ink)' }}>Jangka hayat anggaran</th>
-              <th style={{ textAlign: 'left', padding: '8px 0 8px 12px', color: 'var(--ink)' }}>Ciri utama</th>
+              <th scope="col" style={{ textAlign: 'left', padding: '8px 12px 8px 0', color: 'var(--ink)' }}>Jenis pengisian</th>
+              <th scope="col" style={{ textAlign: 'left', padding: '8px 12px', color: 'var(--ink)' }}>Jangka hayat anggaran</th>
+              <th scope="col" style={{ textAlign: 'left', padding: '8px 0 8px 12px', color: 'var(--ink)' }}>Ciri utama</th>
             </tr>
           </thead>
           <tbody>
             {fillings.map(([key, name, , , lifespan, trait]) => <tr key={key} style={{ borderBottom: '1px solid var(--line)' }}>
-              <td style={{ padding: '10px 12px 10px 0', color: 'var(--ink)', fontWeight: 700 }}>{name}</td>
+              <th scope="row" style={{ textAlign: 'left', padding: '10px 12px 10px 0', color: 'var(--ink)', fontWeight: 700 }}>{name}</th>
               <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{lifespan}</td>
               <td style={{ padding: '10px 0 10px 12px', color: 'var(--text)' }}>{trait}</td>
             </tr>)}
