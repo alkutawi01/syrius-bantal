@@ -1,15 +1,15 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-type Props = { base?: string };
+type Props = { base?: string; active?: 'panduan' | 'majalah' };
 
-export function MobileMenu({ base = '' }: Props) {
-  const links = [
+export function MobileMenu({ base = '', active }: Props) {
+  const links: [string, string, ('panduan' | 'majalah')?][] = [
     [`${base}#cara`, 'Cara tempahan'],
     [`${base}#koleksi`, 'Kegunaan'],
     [`${base}#faq`, 'Soalan lazim'],
-    ['/panduan', 'Panduan'],
-    ['/majalah', 'Majalah'],
+    ['/panduan', 'Panduan', 'panduan'],
+    ['/majalah', 'Majalah', 'majalah'],
     [`${base}#tentang`, 'Tentang kami'],
   ];
   const [open, setOpen] = useState(false);
@@ -49,7 +49,7 @@ export function MobileMenu({ base = '' }: Props) {
       </svg>
     </button>
     {open && <nav id="mobile-menu-panel" className="mobile-menu-panel" aria-label="Navigasi mudah alih">
-      {links.map(([href, label], i) => <a key={href} ref={i === 0 ? firstLinkRef : undefined} href={href} onClick={() => setOpen(false)}>{label}</a>)}
+      {links.map(([href, label, key], i) => <a key={href} ref={i === 0 ? firstLinkRef : undefined} href={href} aria-current={key && key === active ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</a>)}
     </nav>}
   </div>;
 }
