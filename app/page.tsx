@@ -52,7 +52,7 @@ export default function Home() {
       <figure className="bento-tile bento-photo">
         <picture>
           <source srcSet="/syrius-corporate-pillow-blank.webp" type="image/webp" />
-          <img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimasi kosong, sedia untuk cetakan logo jenama anda" />
+          <img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimasi kosong, sedia untuk cetakan logo jenama anda" fetchPriority="high" />
         </picture>
         <figcaption lang="en"><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
