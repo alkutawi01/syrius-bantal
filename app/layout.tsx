@@ -41,6 +41,7 @@ const jsonLd = {
     streetAddress: 'PT 428, Pusat Perniagaan Bandar Baru Tunjong',
     addressLocality: 'Kota Bharu',
     addressRegion: 'Kelantan',
+    postalCode: '16010',
     addressCountry: 'MY',
   },
   areaServed: ['Kelantan', 'Pahang'],
