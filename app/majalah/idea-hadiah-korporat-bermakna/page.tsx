@@ -79,7 +79,7 @@ export default function Artikel() {
           </div>)}
         </div>
 
-        <p>Kajian ASI turut menganggarkan bahawa produk promosi secara purata menghasilkan sekitar 3,300 pendedahan jenama sepanjang tempoh penggunaannya, dengan kos purata AS$0.006 bagi setiap pendedahan. Angka ini merupakan purata merentasi kategori produk promosi secara keseluruhan, bukan angka khusus bagi bantal sublimasi. Kajian ASI turut menunjukkan bahawa kegunaan merupakan antara faktor utama yang mempengaruhi penerima menyimpan produk promosi.</p>
+        <p>Kajian ASI turut menganggarkan bahawa produk promosi secara purata menghasilkan sekitar 3,300 pendedahan jenama sepanjang tempoh penggunaannya, dengan kos purata AS$0.006 bagi setiap pendedahan. Angka ini merupakan purata merentasi kategori produk promosi secara keseluruhan, bukan angka khusus bagi bantal sublimasi. Kajian yang sama turut mendapati 78% responden menyimpan produk promosi kerana menganggapnya berguna, dan 76% menyatakan mereka lebih cenderung berurusan dengan jenama yang menyediakan barang bercetak logo.</p>
       </div>
 
       <div data-reveal>
