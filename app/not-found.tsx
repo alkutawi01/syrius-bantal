@@ -1,6 +1,12 @@
 import { Wordmark } from './components/Wordmark';
 import { whatsappUrl } from './lib/whatsapp';
 
+export const metadata = {
+  title: 'Muka Surat Tidak Dijumpai — Syrius',
+  description: 'Pautan yang anda ikuti mungkin salah atau sudah tidak wujud. Kembali ke laman utama Syrius atau hubungi kami terus.',
+  robots: { index: false, follow: true },
+};
+
 export default function NotFound() {
   return <main className="not-found">
     <div className="container not-found-inner">
