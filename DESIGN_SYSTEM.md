@@ -1,4 +1,4 @@
-# Syrius Design System v1.2
+# Syrius Design System v1.3
 
 ## Direction
 
@@ -61,4 +61,10 @@ Use fine divider lines rather than heavy shadows. Cards are descriptive, not cli
 
 ## Claude Code handoff
 
-The first implementation is a single responsive landing page with reusable `Button` and `Wordmark` components. Future work should extract section primitives only after a second page needs them. Preserve the supplied Syrius logo and token values above; do not introduce a UI library unless it solves a demonstrated need.
+The site has grown from a single landing page into a small multi-page site: `/` (homepage), `/panduan` (buying guide), and `/majalah` (a content hub with individual article pages, mixing corporate/marketing pieces and general pillow/textile/sublimation knowledge). `SiteHeader`, `SiteFooter` and `MobileMenu` were extracted into shared components once the second page needed them, exactly as originally planned — each accepts a `base` prop so anchor links resolve correctly whether rendered on `/` or a sub-page. Preserve the supplied Syrius logo and token values above; do not introduce a UI library unless it solves a demonstrated need.
+
+Newer patterns established since v1.2, for consistency when adding more pages:
+- **Articles** (`/majalah/*`) each get `Article` JSON-LD, a `← MAJALAH` back-link (the `.eyebrow` class used as an `<a>`), and a `Rujukan` (references) section with real, verified, clickable citations — never invented sources or unfalsifiable claims about Syrius specifically.
+- **Stat cards** (`.stat-grid`/`.stat-card`) present cited statistics honestly: one fact per card, its own source line, no oversized icon or product photo beside it that would imply the number is Syrius-specific.
+- General (non-corporate) articles end with one neutral sentence + `.text-link.text-link--right` pointing to `/panduan` — not a hard CTA — to keep them reading as genuine reference content rather than sales pages.
+- Every content page has structured data matching its type (`FAQPage`, `HowTo`, `Article`, `CollectionPage`/`ItemList`), generated from the same array that renders the visible content so they can't drift apart.
