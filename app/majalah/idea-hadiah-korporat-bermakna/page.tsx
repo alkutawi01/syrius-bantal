@@ -36,7 +36,7 @@ const articleJsonLd = {
   datePublished: '2026-08-31',
   dateModified: '2026-08-31',
   author: { '@type': 'Organization', name: 'Syrius' },
-  publisher: { '@type': 'Organization', name: 'Syrius' },
+  publisher: { '@type': 'Organization', name: 'Syrius', logo: { '@type': 'ImageObject', url: '/syrius-logo.png' } },
 };
 
 const stats = [
