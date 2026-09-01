@@ -36,7 +36,7 @@ const nextConfig: NextConfig = {
         // Framework-generated routes (favicons, manifest, robots) default to
         // no caching even though their content only changes on redeploy.
         // Match public/*.webp's existing 1-hour cache for consistency.
-        source: '/(icon.png|apple-icon.png|manifest.webmanifest|robots.txt)',
+        source: '/(icon.png|apple-icon.png|favicon.ico|manifest.webmanifest|robots.txt)',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=3600' }],
       },
     ];
