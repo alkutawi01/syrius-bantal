@@ -44,7 +44,7 @@ const jsonLd = {
     addressCountry: 'MY',
   },
   areaServed: ['Kelantan', 'Pahang'],
-  makesOffer: { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Bantal sublimasi korporat' } },
+  makesOffer: { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Bantal sublimasi korporat', image: '/syrius-corporate-pillow-blank.jpg' } },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
