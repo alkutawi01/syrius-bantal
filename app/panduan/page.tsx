@@ -33,22 +33,22 @@ const occasions = [
 ];
 
 const artworkTips = [
-  ['Format fail', 'Hantar logo dalam format vektor (AI, EPS, PDF) atau PNG latar belakang lutsinar berresolusi tinggi. Ini memastikan logo kekal tajam apabila dicetak.'],
-  ['Warna jenama', 'Sertakan kod warna rasmi jenama anda (HEX atau Pantone) supaya warna cetakan sepadan dengan identiti visual sedia ada.'],
-  ['Susun atur', 'Beritahu kami jika logo perlu diletakkan di satu bahagian sahaja atau berulang merentasi bantal, dan sama ada teks tambahan (contoh: nama acara) perlu disertakan.'],
+  ['Format fail', 'Hantar logo dalam format vektor (AI, EPS, PDF) atau PNG latar belakang lutsinar berresolusi tinggi. Ini memastikan logo kekal tajam apabila dicetak.', <svg key="t1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="M14 3v5h5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>],
+  ['Warna jenama', 'Sertakan kod warna rasmi jenama anda (HEX atau Pantone) supaya warna cetakan sepadan dengan identiti visual sedia ada.', <svg key="t2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.7 2-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8H16a4 4 0 0 0 4-4c0-4.4-3.6-8-8-8Z" stroke="currentColor" strokeWidth="1.5" /><circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" /><circle cx="10.5" cy="7" r="1.1" fill="currentColor" /><circle cx="15" cy="8" r="1.1" fill="currentColor" /></svg>],
+  ['Susun atur', 'Beritahu kami jika logo perlu diletakkan di satu bahagian sahaja atau berulang merentasi bantal, dan sama ada teks tambahan (contoh: nama acara) perlu disertakan.', <svg key="t3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" strokeWidth="1.6" /></svg>],
 ];
 
 const orderSteps = [
-  'Hubungi kami di WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.',
-  'Hantar logo, kod warna jenama dan sebarang panduan identiti visual mengikut format di atas.',
-  'Kami semak reka bentuk, sediakan sebut harga dan anggaran tempoh siap sebelum cetakan dimulakan.',
+  ['Hubungi kami di WhatsApp dan kongsi jenis acara, jumlah unit dan tujuan bantal korporat anda.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /></svg>],
+  ['Hantar logo, kod warna jenama dan sebarang panduan identiti visual mengikut format di atas.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['Kami semak reka bentuk, sediakan sebut harga dan anggaran tempoh siap sebelum cetakan dimulakan.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
 ];
 
 const howToJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'Cara menempah bantal korporat Syrius',
-  step: orderSteps.map((text, i) => ({
+  step: orderSteps.map(([text], i) => ({
     '@type': 'HowToStep',
     position: i + 1,
     text,
@@ -96,9 +96,9 @@ export default function Panduan() {
         <h2 data-reveal style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Menyediakan logo dan reka bentuk</h2>
         <p data-reveal style={{ maxWidth: 700 }}>Untuk memastikan hasil cetakan setepat mungkin dengan identiti jenama anda, berikut beberapa perkara yang membantu proses semakan reka bentuk berjalan lancar:</p>
         <div className="faq-list" style={{ marginTop: 24 }}>
-          {artworkTips.map(([title, text]) => <details className="faq-item" open key={title} data-reveal>
-            <summary style={{ cursor: 'default' }}>{title}</summary>
-            <p>{text}</p>
+          {artworkTips.map(([title, text, icon]) => <details className="faq-item" open key={title} data-reveal>
+            <summary style={{ cursor: 'default', justifyContent: 'flex-start', gap: 14 }}><span className="bento-icon" style={{ margin: 0, flexShrink: 0 }}>{icon}</span>{title}</summary>
+            <p style={{ marginLeft: 52 }}>{text}</p>
           </details>)}
         </div>
       </div>
@@ -107,7 +107,10 @@ export default function Panduan() {
         <h2 style={{ color: 'var(--ink)', fontSize: 20, letterSpacing: '-.01em', margin: '0 0 8px' }}>Langkah tempahan</h2>
         <p style={{ maxWidth: 700, marginBottom: 24 }}>Proses tempahan bermula dengan perbualan ringkas di WhatsApp — tiada borang panjang, tiada kuantiti minimum tinggi.</p>
         <ol style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gap: 16, maxWidth: 700 }}>
-          {orderSteps.map((text, i) => <li style={{ display: 'flex', gap: 14 }} key={text}><b style={{ color: 'var(--navy)', fontWeight: 800 }}>{String(i + 1).padStart(2, '0')}</b><span>{text}</span></li>)}
+          {orderSteps.map(([text, icon], i) => <li style={{ display: 'flex', gap: 14, alignItems: 'center' }} key={text}>
+            <span className="bento-icon" style={{ margin: 0, flexShrink: 0 }}>{icon}</span>
+            <span><b style={{ color: 'var(--navy)', fontWeight: 800, marginRight: 8 }}>{String(i + 1).padStart(2, '0')}</b>{text}</span>
+          </li>)}
         </ol>
       </div>
     </div></section>
