@@ -101,8 +101,8 @@ export default function Artikel() {
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
         <h2 style={{ color: 'var(--ink)', fontSize: 16, letterSpacing: '-.01em', margin: '0 0 10px' }}>Rujukan</h2>
         <ul style={{ paddingLeft: 20, margin: 0, display: 'grid', gap: 8, color: 'var(--text)', fontSize: 13.5 }}>
-          <li>Advertising Specialty Institute (ASI). <em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em> — kajian tinjauan terhadap hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah.</li>
-          <li>Promotional Products Association International (PPAI). Kajian pengguna mengenai ingatan jenama terhadap produk promosi, termasuk kajian ingatan jangka panjang.</li>
+          <li>Advertising Specialty Institute (ASI). <a href="https://www.prnewswire.com/news-releases/asi-research-promotional-products-deliver-impressions-at-a-fraction-of-a-cent-outrank-all-other-ad-channels-302767274.html" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Global Advertising Impressions Study 2026</em></a> — kajian tinjauan terhadap hampir 5,000 pengguna di Amerika Syarikat, Kanada, Mexico dan Eropah.</li>
+          <li>Promotional Products Association International (PPAI). <a href="https://www.ppai.org/media-hub/nine-in-10-consumers-remember-branding-on-promotional-products-study-finds/" target="_blank" rel="noreferrer">Nine In 10 Consumers Remember Branding On Promotional Products, Study Finds</a>.</li>
         </ul>
       </div>
     </div></article>
