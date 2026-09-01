@@ -76,6 +76,8 @@ export default function Artikel() {
           <li>VistaPrint. <a href="https://www.vistaprint.com/hub/dye-sublimation-printing" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Dye Sublimation Printing Guide</em></a>.</li>
         </ul>
       </div>
+
+      <p data-reveal style={{ marginTop: 32 }}>Bantal korporat Syrius dicetak menggunakan teknik sublimasi ini. <a className="text-link" href="/panduan">Lihat panduan menempah <span aria-hidden="true">→</span></a></p>
     </div></article>
 
     <SiteFooter />

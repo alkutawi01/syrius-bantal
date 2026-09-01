@@ -78,6 +78,8 @@ export default function Artikel() {
           <li>Bearaby. <a href="https://bearaby.com/blogs/the-lay-low/pillow-filling-types" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>8 Pillow Filling Types: Latex, Down, Feather & More</em></a>.</li>
         </ul>
       </div>
+
+      <p data-reveal style={{ marginTop: 32 }}>Sedang mencari bantal korporat bercetak logo untuk syarikat anda? <a className="text-link" href="/panduan">Lihat panduan menempah <span aria-hidden="true">→</span></a></p>
     </div></article>
 
     <SiteFooter />
