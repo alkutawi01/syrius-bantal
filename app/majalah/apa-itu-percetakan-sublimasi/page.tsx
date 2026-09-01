@@ -25,6 +25,13 @@ export const metadata = {
   },
 };
 
+const steps = [
+  ['Reka bentuk dicetak', 'Reka bentuk digital dicetak ke kertas pemindahan khas menggunakan dakwat sublimasi pepejal.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['Ditekan dengan haba', 'Kertas dan fabrik dimasukkan ke mesin penekan haba pada suhu sekitar 195–205 °C.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>],
+  ['Dakwat menjadi gas', 'Haba menukar dakwat pepejal terus menjadi gas dan membuka liang halus fabrik.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
+  ['Terperangkap kekal', 'Fabrik menyejuk, liang tertutup semula dan dakwat kekal terperangkap di dalamnya.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+];
+
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -54,6 +61,13 @@ export default function Artikel() {
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Bagaimana proses ini berfungsi</h2>
+        <div className="step-grid" style={{ marginBottom: 24 }}>
+          {steps.map(([title, text, icon], i) => <div className="bento-tile bento-value" key={title}>
+            <span className="bento-icon">{icon}</span>
+            <p style={{ color: 'var(--text)', fontSize: 11, fontWeight: 700, letterSpacing: '.05em', margin: '0 0 4px' }}>{String(i + 1).padStart(2, '0')}</p>
+            <h3>{title}</h3><p>{text}</p>
+          </div>)}
+        </div>
         <p>Proses bermula apabila reka bentuk digital dicetak ke atas kertas pemindahan khas menggunakan dakwat sublimasi — dakwat yang berbentuk pepejal pada suhu bilik. Kertas ini kemudian diletakkan bersentuhan dengan fabrik dan dimasukkan ke dalam mesin penekan haba (<em lang="en" style={{ fontStyle: 'normal' }}>heat press</em>) pada suhu tinggi, biasanya sekitar 195–205 °C, dengan tekanan yang tetap selama beberapa saat.</p>
         <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba turut membuka liang-liang halus pada fabrik, membolehkan gas dakwat meresap masuk. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, liang-liang tersebut tertutup semula dan dakwat terperangkap secara kekal di dalam struktur fabrik.</p>
       </div>
