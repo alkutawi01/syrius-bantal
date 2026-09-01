@@ -1,4 +1,4 @@
-# Syrius Design System v1.4
+# Syrius Design System v1.5
 
 ## Direction
 
@@ -75,3 +75,7 @@ Newer patterns established since v1.2, for consistency when adding more pages:
 - `SiteHeader`/`MobileMenu` accept an optional `active: 'panduan' | 'majalah'` prop so the current section's nav link gets `aria-current="page"` plus a bold/solid-white style; pass it from any new sub-page that has a matching nav item.
 
 Known blocker, not yet resolvable: there is no `sitemap.ts` or `metadataBase`, because the real production domain for this Cloudflare-deployed site isn't known (vinext's only automatic fallback is Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, irrelevant here). Ask Izzat for the production URL before adding either — do not guess a domain.
+
+**Security headers** are set in `next.config.ts`'s `headers()` (confirmed supported by vinext, unlike some Next.js server APIs) and apply to every route: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` (camera/microphone/geolocation/payment/usb all disabled — this site uses none of them), and `Strict-Transport-Security`. **Content-Security-Policy is deliberately not set.** It needs careful `script-src`/`style-src` tuning first: every page inline-renders `<script type="application/ld+json">` for structured data, and every component uses React `style={{}}` (compiles to inline `style="..."` attributes) throughout — a naive CSP could silently break either without an obvious visual failure (structured data just stops being crawled, no error banner). Don't add a CSP without testing that both survive it.
+
+**Content arrays that mix plain strings with inline JSX** (icons, fragments) — the pattern used for `values`/`steps`/`occasions`/`articles`/etc. across every page — need an explicit tuple type annotation (e.g. `const values: [string, string, ReactNode][] = [...]`). Without it, TypeScript widens each destructured position to a `string | Element` union, which silently fails `key={firstElement}` under `strict: true` (the project's own `npm run build` doesn't catch this — only a standalone `npx tsc --noEmit` does). Type any new array of this shape the same way.
