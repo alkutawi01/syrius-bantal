@@ -33,6 +33,7 @@ const jsonLd = {
   name: 'Syrius',
   description,
   image: '/syrius-corporate-pillow-blank.jpg',
+  logo: '/syrius-logo.png',
   telephone: '+60 11-5449 8790',
   email: 'syriusmalaysia@gmail.com',
   address: {
