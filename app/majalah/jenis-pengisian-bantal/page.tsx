@@ -99,8 +99,8 @@ export default function Artikel() {
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
         <h2 style={{ color: 'var(--ink)', fontSize: 16, letterSpacing: '-.01em', margin: '0 0 10px' }}>Rujukan</h2>
         <ul style={{ paddingLeft: 20, margin: 0, display: 'grid', gap: 8, color: 'var(--text)', fontSize: 13.5 }}>
-          <li>Nolah Sleep. <a href="https://www.nolahsleep.com/blogs/blog/best-pillow-material" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>The Perfect Pillow: How To Choose Between Down, Feather, Foam, and More</em></a>.</li>
-          <li>Bearaby. <a href="https://bearaby.com/blogs/the-lay-low/pillow-filling-types" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>8 Pillow Filling Types: Latex, Down, Feather & More</em></a>.</li>
+          <li>Nolah Sleep. <a href="https://www.nolahsleep.com/blogs/blog/best-pillow-material" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>The Perfect Pillow: How To Choose Between Down, Feather, Foam, and More</em><span className="sr-only"> (buka di tab baharu)</span></a>.</li>
+          <li>Bearaby. <a href="https://bearaby.com/blogs/the-lay-low/pillow-filling-types" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>8 Pillow Filling Types: Latex, Down, Feather & More</em><span className="sr-only"> (buka di tab baharu)</span></a>.</li>
         </ul>
       </div>
 

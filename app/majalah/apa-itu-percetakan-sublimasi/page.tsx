@@ -86,8 +86,8 @@ export default function Artikel() {
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
         <h2 style={{ color: 'var(--ink)', fontSize: 16, letterSpacing: '-.01em', margin: '0 0 10px' }}>Rujukan</h2>
         <ul style={{ paddingLeft: 20, margin: 0, display: 'grid', gap: 8, color: 'var(--text)', fontSize: 13.5 }}>
-          <li>Mimaki USA. <a href="https://www.mimakiusa.com/blog/understanding-the-dye-sublimation-process/" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Understanding the Dye Sublimation Process</em></a>.</li>
-          <li>VistaPrint. <a href="https://www.vistaprint.com/hub/dye-sublimation-printing" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Dye Sublimation Printing Guide</em></a>.</li>
+          <li>Mimaki USA. <a href="https://www.mimakiusa.com/blog/understanding-the-dye-sublimation-process/" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Understanding the Dye Sublimation Process</em><span className="sr-only"> (buka di tab baharu)</span></a>.</li>
+          <li>VistaPrint. <a href="https://www.vistaprint.com/hub/dye-sublimation-printing" target="_blank" rel="noreferrer"><em lang="en" style={{ fontStyle: 'italic' }}>Dye Sublimation Printing Guide</em><span className="sr-only"> (buka di tab baharu)</span></a>.</li>
         </ul>
       </div>
 
