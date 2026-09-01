@@ -92,7 +92,7 @@ export default function Artikel() {
       </div>
 
       <div data-reveal>
-        <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Tiada jenis yang "terbaik" secara mutlak</h2>
+        <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Tiada jenis yang &ldquo;terbaik&rdquo; secara mutlak</h2>
         <p>Pemilihan pengisian bergantung pada keutamaan peribadi — tahap kekukuhan sokongan yang diperlukan, sensitiviti alahan, bajet dan cara penjagaan yang sanggup dilakukan. Bantal yang sesuai untuk seseorang belum tentu sesuai untuk yang lain, jadi memahami ciri setiap jenis adalah langkah pertama sebelum membuat pilihan.</p>
       </div>
 

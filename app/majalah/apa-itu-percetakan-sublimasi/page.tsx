@@ -80,7 +80,7 @@ export default function Artikel() {
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Ciri hasil cetakan</h2>
         <p>Oleh sebab dakwat menjadi sebahagian daripada gentian fabrik dan bukan lapisan di atas permukaannya, hasil cetakan sublimasi tidak retak, mengelupas atau luntur dengan cara yang sama seperti cetakan berasaskan lapisan permukaan (contohnya, sablon skrin biasa). Ini menjadikannya sesuai untuk reka bentuk berwarna penuh dan corak yang merentasi keseluruhan permukaan produk, seperti pada bantal atau jersi bercetak penuh.</p>
-        <p>Setiap kaedah percetakan — sublimasi, DTF, DTG atau sablon — mempunyai kelebihan dan kesesuaian tersendiri bergantung pada jenis fabrik, kerumitan reka bentuk dan kuantiti tempahan. Tiada satu kaedah yang secara mutlak "terbaik" untuk semua situasi.</p>
+        <p>Setiap kaedah percetakan — sublimasi, DTF, DTG atau sablon — mempunyai kelebihan dan kesesuaian tersendiri bergantung pada jenis fabrik, kerumitan reka bentuk dan kuantiti tempahan. Tiada satu kaedah yang secara mutlak &ldquo;terbaik&rdquo; untuk semua situasi.</p>
       </div>
 
       <div data-reveal style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--line)' }}>
