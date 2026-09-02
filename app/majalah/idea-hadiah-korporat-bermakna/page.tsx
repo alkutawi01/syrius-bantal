@@ -57,9 +57,10 @@ export default function Artikel() {
 
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
       <a className="eyebrow" href="/majalah" data-reveal>← MAJALAH</a>
-      <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '0 0 20px' }} data-reveal>
+      <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '16px 0 8px' }} data-reveal>
         Mengapa hadiah korporat yang berguna lebih berkesan dalam membina <em style={{ fontStyle: 'normal' }}>ingatan jenama?</em>
       </h1>
+      <p style={{ color: 'var(--text)', fontSize: 13, margin: '0 0 20px' }} data-reveal>3 minit bacaan</p>
       <p className="lede" data-reveal style={{ marginTop: 0 }}>
         Banyak organisasi masih memilih cenderamata generik seperti pen, buku nota atau beg plastik semasa merancang hadiah untuk staf, pelanggan atau tetamu acara. Barang yang jarang digunakan selepas sesuatu acara berakhir biasanya kurang berupaya untuk mengekalkan ingatan penerima terhadap jenama pemberinya. Persoalan sebenar bukan sekadar reka bentuk hadiah itu menarik atau tidak, tetapi sama ada ia benar-benar menjadi sebahagian daripada kehidupan seharian penerima.
       </p>

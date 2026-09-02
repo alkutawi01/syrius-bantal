@@ -56,9 +56,10 @@ export default function Artikel() {
 
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
       <a className="eyebrow" href="/majalah" data-reveal>← MAJALAH</a>
-      <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '0 0 20px' }} data-reveal>
+      <h1 style={{ color: 'var(--ink)', fontWeight: 800, letterSpacing: '-.03em', lineHeight: 1.15, fontSize: 'clamp(26px, 3.6vw, 38px)', margin: '16px 0 8px' }} data-reveal>
         Panduan memahami jenis <em style={{ fontStyle: 'normal' }}>pengisian bantal.</em>
       </h1>
+      <p style={{ color: 'var(--text)', fontSize: 13, margin: '0 0 20px' }} data-reveal>2 minit bacaan</p>
       <p className="lede" data-reveal style={{ marginTop: 0 }}>
         Jenis pengisian menentukan tahap keselesaan, sokongan dan jangka hayat sesebuah bantal — bukan sekadar reka bentuk luarannya. Berikut perbezaan asas antara beberapa jenis pengisian yang paling biasa digunakan.
       </p>
