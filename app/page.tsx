@@ -58,12 +58,12 @@ export default function Home() {
         <figcaption lang="en"><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
 
-      <h2 className="sr-only">Sebab pilih Syrius</h2>
+      <h2 className="sr-only" id="kelebihan">Sebab pilih Syrius</h2>
       {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" style={{ gridArea: `val${i + 1}`, transitionDelay: `${i * 80}ms` }} data-reveal key={title}>
         <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
       </div>)}
 
-      <div className="bento-tile bento-fact" id="koleksi" data-reveal style={{ transitionDelay: '240ms' }}>
+      <div className="bento-tile bento-fact" data-reveal style={{ transitionDelay: '240ms' }}>
         <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /><path d="M8.5 14.5l2 2 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg><div><b>Sejak 2011</b><span>Sebahagian daripada Syrius</span></div></div>
         <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg><div><b>Kelantan &amp; Pahang</b><span>Liputan penghantaran</span></div></div>
       </div>

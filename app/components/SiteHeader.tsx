@@ -12,7 +12,7 @@ export function SiteHeader({ base = '', active }: Props) {
       <a href={base || '#utama'} aria-label="Syrius, kembali ke atas"><Wordmark /></a>
       <nav aria-label="Navigasi utama">
         <a href={`${base}#cara`}>Cara tempahan</a>
-        <a href={`${base}#koleksi`}>Kegunaan</a>
+        <a href={`${base}#kelebihan`}>Kelebihan</a>
         <a href="/portfolio" aria-current={active === 'portfolio' ? 'page' : undefined}>Portfolio</a>
         <a href={`${base}#faq`}>Soalan lazim</a>
         <a href="/panduan" aria-current={active === 'panduan' ? 'page' : undefined}>Panduan</a>
