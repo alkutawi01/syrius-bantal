@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const title = 'Syrius — Wear Your Vision';
+const title = 'Bantal Sublimasi Korporat Berlogo — Syrius';
 const description = 'Bantal sublimasi korporat berlogo untuk syarikat dan organisasi di Malaysia. Sebahagian daripada Syrius, dipercayai sejak 2011.';
 
 export const metadata: Metadata = {

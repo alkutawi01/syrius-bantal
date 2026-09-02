@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Syrius — Wear Your Vision',
+    name: 'Bantal Sublimasi Korporat Berlogo — Syrius',
     short_name: 'Syrius',
     description: 'Bantal sublimasi korporat berlogo untuk syarikat dan organisasi di Malaysia.',
     start_url: '/',
