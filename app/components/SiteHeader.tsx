@@ -3,7 +3,7 @@ import { Wordmark } from './Wordmark';
 import { MobileMenu } from './MobileMenu';
 import { whatsappUrl } from '../lib/whatsapp';
 
-type Props = { base?: string; active?: 'panduan' | 'majalah' };
+type Props = { base?: string; active?: 'panduan' | 'majalah' | 'portfolio' };
 
 export function SiteHeader({ base = '', active }: Props) {
   return <>
@@ -13,6 +13,7 @@ export function SiteHeader({ base = '', active }: Props) {
       <nav aria-label="Navigasi utama">
         <a href={`${base}#cara`}>Cara tempahan</a>
         <a href={`${base}#koleksi`}>Kegunaan</a>
+        <a href="/portfolio" aria-current={active === 'portfolio' ? 'page' : undefined}>Portfolio</a>
         <a href={`${base}#faq`}>Soalan lazim</a>
         <a href="/panduan" aria-current={active === 'panduan' ? 'page' : undefined}>Panduan</a>
         <a href="/majalah" aria-current={active === 'majalah' ? 'page' : undefined}>Majalah</a>

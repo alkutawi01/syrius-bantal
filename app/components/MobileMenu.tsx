@@ -1,12 +1,13 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-type Props = { base?: string; active?: 'panduan' | 'majalah' };
+type Props = { base?: string; active?: 'panduan' | 'majalah' | 'portfolio' };
 
 export function MobileMenu({ base = '', active }: Props) {
-  const links: [string, string, ('panduan' | 'majalah')?][] = [
+  const links: [string, string, ('panduan' | 'majalah' | 'portfolio')?][] = [
     [`${base}#cara`, 'Cara tempahan'],
     [`${base}#koleksi`, 'Kegunaan'],
+    ['/portfolio', 'Portfolio', 'portfolio'],
     [`${base}#faq`, 'Soalan lazim'],
     ['/panduan', 'Panduan', 'panduan'],
     ['/majalah', 'Majalah', 'majalah'],

@@ -1,4 +1,4 @@
-# Syrius Design System v1.6
+# Syrius Design System v1.7
 
 ## Direction
 
@@ -72,7 +72,7 @@ Newer patterns established since v1.2, for consistency when adding more pages:
 - **Stat cards** (`.stat-grid`/`.stat-card`) present cited statistics honestly: one fact per card, its own source line, no oversized icon or product photo beside it that would imply the number is Syrius-specific.
 - General (non-corporate) articles end with one neutral sentence + `.text-link.text-link--right` pointing to `/panduan` — not a hard CTA — to keep them reading as genuine reference content rather than sales pages.
 - Every content page has structured data matching its type (`FAQPage`, `HowTo`, `Article`, `CollectionPage`/`ItemList`), generated from the same array that renders the visible content so they can't drift apart. The root layout's `LocalBusiness` data now uses a top-level `@graph` array (one entry per physical location) rather than a single object — follow that shape if a third location is ever added.
-- `SiteHeader`/`MobileMenu` accept an optional `active: 'panduan' | 'majalah'` prop so the current section's nav link gets `aria-current="page"` plus a bold/solid-white style; pass it from any new sub-page that has a matching nav item.
+- `SiteHeader`/`MobileMenu` accept an optional `active: 'panduan' | 'majalah' | 'portfolio'` prop so the current section's nav link gets `aria-current="page"` plus a bold/solid-white style; pass it from any new sub-page that has a matching nav item.
 
 Known blocker, not yet resolvable: there is no `sitemap.ts` or `metadataBase`, because the real production domain for this Cloudflare-deployed site isn't known (vinext's only automatic fallback is Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, irrelevant here). Ask Izzat for the production URL before adding either — do not guess a domain.
 
@@ -81,5 +81,11 @@ Known blocker, not yet resolvable: there is no `sitemap.ts` or `metadataBase`, b
 - `vinext dev`'s Vite/HMR client uses `eval()`, which the policy correctly has no allowance for. That's a dev-only artifact — it never appears against the production build — so the CSP is skipped entirely in development rather than being weakened with `'unsafe-eval'`.
 
 If you touch this policy, re-verify against `vinext build && npx vinext start` (not just `vinext dev`): check all routes for violations, that the mobile menu is still interactive, that Google Fonts still resolves (computed `font-family` should say "Plus Jakarta Sans", not fall back to Arial), and that both JSON-LD `<script>` tags still parse.
+
+**`/portfolio` + `/admin` (v1.7)**: since there was no way for Izzat to update showcase images without a developer, and no real customer photos existed yet, `/portfolio` was added as a public page showing 3 placeholder images with an on-page disclaimer that they're illustrative, not real customer work — swap them for real photos the moment any exist. Images are served by a dynamic `/images/[key]` Route Handler backed by Cloudflare R2 (`env.PORTFOLIO_BUCKET`), not static files directly, so they can change without a redeploy. `app/lib/portfolioSlots.ts` defines the fixed whitelist (`PORTFOLIO_SLOTS = ['portfolio-1', 'portfolio-2', 'portfolio-3']`) — never accept an arbitrary key from a request; every route that touches R2 validates against this list first. If a slot has never been uploaded to, `/images/[key]` redirects to the matching static `public/dummy-portfolio-N.jpg` fallback, so the page never breaks even on a fresh deploy with an empty bucket.
+
+A minimal password-gated `/admin` page (noindexed via both page metadata and `robots.ts`) lets Izzat replace each image himself: session is a single httpOnly/secure/sameSite=strict cookie holding a SHA-256 hash of one shared password (`env.ADMIN_PASSWORD`), 12-hour expiry — deliberately lightweight, appropriate for a low-stakes internal tool with one operator, not a multi-user auth system. Local dev reads `ADMIN_PASSWORD` and the R2 binding from `.dev.vars` / `.openai/hosting.json`'s `"r2"` key (gitignored, never commit real secrets there).
+
+**Known blocker, not yet resolvable by Claude Code**: this only works in production once a real R2 bucket is provisioned and bound as `PORTFOLIO_BUCKET`, and a real `ADMIN_PASSWORD` secret is set on the actual live Cloudflare account — both are account-level actions outside this environment's access. Until Izzat (or whoever manages the Cloudflare account) does that, the deployed `/admin` page will not have working storage even though it works in local dev.
 
 **Content arrays that mix plain strings with inline JSX** (icons, fragments) — the pattern used for `values`/`steps`/`occasions`/`articles`/etc. across every page — need an explicit tuple type annotation (e.g. `const values: [string, string, ReactNode][] = [...]`). Without it, TypeScript widens each destructured position to a `string | Element` union, which silently fails `key={firstElement}` under `strict: true` (the project's own `npm run build` doesn't catch this — only a standalone `npx tsc --noEmit` does). Type any new array of this shape the same way.
