@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     description,
     images: ['/syrius-corporate-pillow-blank.jpg'],
   },
+  appleWebApp: {
+    capable: true,
+    title: 'Syrius',
+    statusBarStyle: 'black-translucent',
+  },
 };
 
 export const viewport: Viewport = {
