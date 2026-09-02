@@ -46,7 +46,7 @@ export default function Home() {
       <div className="bento-tile bento-hero">
         <p className="eyebrow" lang="en">BRANDED COMFORT, MADE TO GIFT</p>
         <h1>Logo anda.<br />Dalam ingatan <em>mereka.</em></h1>
-        <p className="lede">Bantal sublimasi korporat untuk syarikat, organisasi dan jenama yang mahu memberikan sesuatu yang lebih bermakna daripada cenderamata biasa.</p>
+        <p className="lede">Bantal sublimasi korporat, dicetak khas dengan logo dan warna jenama anda sendiri — bukan cenderamata generik. Sesuai untuk tempahan kecil mahupun besar, dihasilkan oleh pasukan yang telah berpengalaman sejak 2011.</p>
         <div className="hero-actions"><Button href={whatsappUrl} variant="navy">Tempah bantal korporat <span aria-hidden="true">↗</span></Button><a className="text-link" href="#cara">Lihat caranya <span aria-hidden="true">↓</span></a></div>
       </div>
 
