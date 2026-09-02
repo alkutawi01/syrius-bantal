@@ -7,6 +7,7 @@ const description = 'Bantal sublimasi korporat berlogo untuk syarikat dan organi
 export const metadata: Metadata = {
   title,
   description,
+  category: 'shopping',
   openGraph: {
     title,
     description,
