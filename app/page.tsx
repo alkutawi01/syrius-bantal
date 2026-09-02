@@ -74,7 +74,7 @@ export default function Home() {
       </div>
     </div></section>
 
-    <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Syrius membantu organisasi menterjemahkan identiti visual kepada hadiah korporat yang berguna dan bermakna untuk staf, pelanggan, rakan strategik dan tetamu acara.</p></div></section>
+    <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Logo dan warna jenama anda dicetak terus ke atas fabrik bantal melalui sublimasi, hasil tahan lama untuk hadiah staf, pelanggan, rakan strategik dan tetamu acara — bukan cetakan tampal yang mudah luntur.</p></div></section>
 
     <section className="section faq" id="faq"><div className="container">
       <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>menghubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
