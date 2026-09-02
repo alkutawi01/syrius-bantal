@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { env } from 'cloudflare:workers';
 import { Button } from '../components/Button';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { SiteHeader } from '../components/SiteHeader';
 import { SiteFooter } from '../components/SiteFooter';
 import { whatsappUrl } from '../lib/whatsapp';
-import { PORTFOLIO_SLOTS } from '../lib/portfolioSlots';
+import { PORTFOLIO_SLOTS, PORTFOLIO_DISCLAIMER_KEY, DEFAULT_PORTFOLIO_DISCLAIMER } from '../lib/portfolioSlots';
 
 const title = 'Portfolio — Syrius';
 const description = 'Contoh reka bentuk bantal sublimasi korporat Syrius.';
@@ -28,7 +29,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Portfolio() {
+export default async function Portfolio() {
+  const disclaimerObject = await env.PORTFOLIO_BUCKET.get(PORTFOLIO_DISCLAIMER_KEY);
+  const disclaimer = disclaimerObject ? await disclaimerObject.text() : DEFAULT_PORTFOLIO_DISCLAIMER;
+
   return <main>
     <a className="skip-link" href="#portfolio">Langkau ke kandungan utama</a>
     <ScrollReveal />
@@ -37,7 +41,7 @@ export default function Portfolio() {
     <section className="section" id="portfolio" tabIndex={-1}><div className="container">
       <div className="section-head" data-reveal>
         <div><p className="eyebrow">PORTFOLIO</p><h1>Contoh <em>reka bentuk.</em></h1></div>
-        <p>Gambar di bawah ialah ilustrasi sementara untuk tunjuk gaya paparan — bukan hasil kerja sebenar pelanggan Syrius. Hubungi kami untuk lihat contoh sebenar atau berbincang tentang reka bentuk anda.</p>
+        <p>{disclaimer}</p>
       </div>
 
       <div className="occasion-grid">

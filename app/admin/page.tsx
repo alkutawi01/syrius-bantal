@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { env } from 'cloudflare:workers';
 import { cookies } from 'next/headers';
 import { isValidSession, SESSION_COOKIE } from '../lib/adminAuth';
-import { PORTFOLIO_SLOTS } from '../lib/portfolioSlots';
+import { PORTFOLIO_SLOTS, PORTFOLIO_DISCLAIMER_KEY, DEFAULT_PORTFOLIO_DISCLAIMER } from '../lib/portfolioSlots';
 
 export const metadata: Metadata = {
   title: 'Admin — Syrius',
@@ -14,6 +14,8 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   const cookieStore = await cookies();
   const session = cookieStore.get(SESSION_COOKIE)?.value;
   const authed = await isValidSession(session, env.ADMIN_PASSWORD);
+  const disclaimerObject = authed ? await env.PORTFOLIO_BUCKET.get(PORTFOLIO_DISCLAIMER_KEY) : null;
+  const disclaimer = disclaimerObject ? await disclaimerObject.text() : DEFAULT_PORTFOLIO_DISCLAIMER;
 
   if (!authed) {
     return <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--navy)' }}>
@@ -34,10 +36,12 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
           <button type="submit" className="text-link" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>Log keluar</button>
         </form>
       </div>
-      {params.success && <p style={{ color: '#1e8449', fontSize: 14 }}>Gambar berjaya dikemas kini.</p>}
+      {params.success === '1' && <p style={{ color: '#1e8449', fontSize: 14 }}>Gambar berjaya dikemas kini.</p>}
+      {params.success === '2' && <p style={{ color: '#1e8449', fontSize: 14 }}>Teks nota berjaya dikemas kini.</p>}
       {params.error === 'filetype' && <p style={{ color: '#c0392b', fontSize: 14 }}>Fail mesti gambar (JPG/PNG/WebP).</p>}
       {params.error === 'filesize' && <p style={{ color: '#c0392b', fontSize: 14 }}>Fail terlalu besar (maksimum 8MB).</p>}
       {params.error === 'upload' && <p style={{ color: '#c0392b', fontSize: 14 }}>Sila pilih slot dan fail gambar.</p>}
+      {params.error === 'textlength' && <p style={{ color: '#c0392b', fontSize: 14 }}>Teks terlalu panjang (maksimum 500 aksara).</p>}
       {PORTFOLIO_SLOTS.map((slot, i) => <div key={slot} style={{ background: '#fff', borderRadius: 12, padding: 20, display: 'grid', gap: 12 }}>
         <p style={{ margin: 0, fontWeight: 700, color: 'var(--ink)' }}>Portfolio {i + 1}</p>
         <img src={`/images/${slot}`} alt={`Portfolio ${i + 1} semasa`} style={{ width: '100%', maxWidth: 240, borderRadius: 8, aspectRatio: '1/1', objectFit: 'cover' }} />
@@ -47,6 +51,17 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
           <button type="submit" className="button button--navy button--sm" style={{ border: 'none', cursor: 'pointer' }}>Muat naik</button>
         </form>
       </div>)}
+
+      <div style={{ background: '#fff', borderRadius: 12, padding: 20, display: 'grid', gap: 12 }}>
+        <p style={{ margin: 0, fontWeight: 700, color: 'var(--ink)' }}>Nota di atas gambar portfolio</p>
+        <form action="/admin/text" method="POST" style={{ display: 'grid', gap: 10 }}>
+          <textarea name="disclaimer" defaultValue={disclaimer} maxLength={500} rows={3} style={{ padding: 10, borderRadius: 8, border: '1px solid var(--line)', fontFamily: 'inherit', fontSize: 14, resize: 'vertical' }} />
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <button type="submit" className="button button--navy button--sm" style={{ border: 'none', cursor: 'pointer' }}>Simpan</button>
+            <span style={{ fontSize: 12, color: 'var(--text)', alignSelf: 'center' }}>Kosongkan dan simpan untuk kembali ke teks asal.</span>
+          </div>
+        </form>
+      </div>
     </div>
   </main>;
 }
