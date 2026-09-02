@@ -33,6 +33,12 @@ a { color: inherit; text-decoration: none; }
 .announcement a { color: #fff; transition: color .2s; }
 .announcement a:hover { color: rgba(255,255,255,.7); }
 .site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 20; }
+
+/* keep anchor-scrolled sections clear of the sticky header */
+#utama, #cara, #kelebihan, #faq, #tentang { scroll-margin-top: 96px; }
+@media (max-width: 1024px) {
+  #utama, #cara, #kelebihan, #faq, #tentang { scroll-margin-top: 84px; }
+}
 .nav { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav > nav { display: flex; gap: 32px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.78); }
 .nav > nav a { transition: color .2s; }
