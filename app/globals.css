@@ -183,6 +183,9 @@ footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 
 .fab-whatsapp { position: fixed; right: 22px; bottom: 22px; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 26px rgba(0,0,0,.25); z-index: 40; transition: transform .2s; }
 .fab-whatsapp:hover { transform: scale(1.06); }
 .fab-whatsapp svg { width: 26px; height: 26px; }
+/* on short/landscape mobile viewports the open nav panel's visible area
+   can overlap the fixed FAB's position - hide it while the menu is open */
+body.mobile-menu-open .fab-whatsapp { display: none; }
 
 *:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
 

@@ -21,6 +21,7 @@ export function MobileMenu({ base = '', active }: Props) {
   useEffect(() => {
     if (!open) return;
     firstLinkRef.current?.focus();
+    document.body.classList.add('mobile-menu-open');
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -36,6 +37,7 @@ export function MobileMenu({ base = '', active }: Props) {
     document.addEventListener('keydown', onKeyDown);
     document.addEventListener('pointerdown', onPointerDown);
     return () => {
+      document.body.classList.remove('mobile-menu-open');
       document.removeEventListener('keydown', onKeyDown);
       document.removeEventListener('pointerdown', onPointerDown);
     };
