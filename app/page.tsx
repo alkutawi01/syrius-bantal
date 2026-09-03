@@ -70,7 +70,7 @@ export default function Home() {
 
       <div className="bento-tile bento-steps" id="cara" data-reveal>
         <h2 className="eyebrow">CARA TEMPAHAN</h2>
-        <div className="bento-steps-row">{steps.map(([number, title, text, icon]) => <div key={number}><span className="dot">{icon}</span><b className="step-number">{number}</b><h3>{title}</h3><p>{text}</p></div>)}</div>
+        <ol className="bento-steps-row">{steps.map(([number, title, text, icon]) => <li key={number}><span className="dot">{icon}</span><b className="step-number">{number}</b><h3>{title}</h3><p>{text}</p></li>)}</ol>
       </div>
     </div></section>
 

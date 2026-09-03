@@ -125,7 +125,7 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 
 .bento-steps { grid-area: steps; background: var(--navy); padding: 34px 36px; color: #fff; }
 .bento-steps .eyebrow { color: rgba(255,255,255,.5); margin-bottom: 20px; }
-.bento-steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.bento-steps-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; list-style: none; margin: 0; padding: 0; }
 .bento-steps-row .dot { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,.12); color: #fff; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
 .bento-steps-row .dot svg { width: 18px; height: 18px; }
 .bento-steps-row .step-number { display: block; color: rgba(255,255,255,.5); font-size: 11px; font-weight: 800; letter-spacing: .08em; margin-bottom: 6px; }
