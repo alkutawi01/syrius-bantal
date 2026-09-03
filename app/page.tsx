@@ -58,8 +58,8 @@ export default function Home() {
         <figcaption lang="en"><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
 
-      <h2 className="sr-only" id="kelebihan">Sebab pilih Syrius</h2>
-      {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" style={{ gridArea: `val${i + 1}`, transitionDelay: `${i * 80}ms` }} data-reveal key={title}>
+      <h2 className="sr-only">Sebab pilih Syrius</h2>
+      {values.map(([title, text, icon], i) => <div className="bento-tile bento-value" id={i === 0 ? 'kelebihan' : undefined} style={{ gridArea: `val${i + 1}`, transitionDelay: `${i * 80}ms` }} data-reveal key={title}>
         <span className="bento-icon">{icon}</span><h3>{title}</h3><p>{text}</p>
       </div>)}
 
