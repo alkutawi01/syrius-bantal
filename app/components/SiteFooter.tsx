@@ -21,6 +21,6 @@ export function SiteFooter() {
         <a href="mailto:syriuspahang@gmail.com">syriuspahang@gmail.com</a>
         <a href="https://www.google.com/maps/search/?api=1&query=No.+9%2C+Tingkat+1%2C+Jalan+Star+City+1%2C+Mentakab+Star+City%2C+28400+Mentakab%2C+Pahang" target="_blank" rel="noreferrer">No. 9, Tingkat 1, Jalan Star City 1<br />Mentakab Star City, 28400 Mentakab.<span className="sr-only"> (buka di tab baharu)</span></a>
       </address>
-    </div><div className="container copyright">© 2026 Syrius Malaysia <span lang="en">Wear Your Vision</span></div></footer>
+    </div><div className="container copyright">© {new Date().getFullYear()} Syrius Malaysia <span lang="en">Wear Your Vision</span></div></footer>
   </>;
 }
