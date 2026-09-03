@@ -78,7 +78,7 @@ export default function Home() {
 
     <section className="section faq" id="faq"><div className="container">
       <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>menghubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
-      <div className="faq-list">{faqs.map(([q, a, link]) => <details className="faq-item" key={q} data-reveal><summary>{q}<span className="faq-icon" aria-hidden="true">+</span></summary><p>{a}{link}</p></details>)}</div>
+      <ul className="faq-list">{faqs.map(([q, a, link]) => <li key={q}><details className="faq-item" data-reveal><summary>{q}<span className="faq-icon" aria-hidden="true">+</span></summary><p>{a}{link}</p></details></li>)}</ul>
     </div></section>
 
     <section className="final-cta"><div className="container" data-reveal><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang reka bentuk, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
