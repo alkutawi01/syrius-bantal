@@ -171,6 +171,7 @@ h3 { color: var(--ink); font-size: 17px; letter-spacing: -.02em; line-height: 1.
 
 footer { background: var(--navy); color: rgba(255,255,255,.72); padding: 60px 0 24px; }
 .footer-grid { display: grid; gap: 44px; grid-template-columns: 1.5fr 1fr 1fr; }
+.footer-grid address { font-style: normal; }
 .footer-grid .syrius-logo { width: 170px; }
 .footer-grid > div > p { color: rgba(255,255,255,.55); font-size: 13px; max-width: 250px; margin-top: 16px; }
 .footer-grid a { display: block; font-size: 13px; margin: 7px 0; color: rgba(255,255,255,.85); transition: color .2s; }

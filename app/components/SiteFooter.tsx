@@ -9,18 +9,18 @@ export function SiteFooter() {
 
     <footer><div className="container footer-grid">
       <div><Wordmark /><p>Bantal sublimasi korporat untuk hadiah yang lebih bermakna.</p></div>
-      <div>
+      <address>
         <p className="footer-label">KELANTAN (HQ)</p>
         <a href={whatsappUrl} target="_blank" rel="noreferrer">+60 11-5449 8790<span className="sr-only"> (buka di tab baharu)</span></a>
         <a href="mailto:syriusmalaysia@gmail.com">syriusmalaysia@gmail.com</a>
         <a href="https://www.google.com/maps/search/?api=1&query=PT+428%2C+Pusat+Perniagaan+Bandar+Baru+Tunjong%2C+16010+Kota+Bharu%2C+Kelantan" target="_blank" rel="noreferrer">PT 428, Pusat Perniagaan<br />Bandar Baru Tunjong, 16010 Kota Bharu.<span className="sr-only"> (buka di tab baharu)</span></a>
-      </div>
-      <div>
+      </address>
+      <address>
         <p className="footer-label">PAHANG</p>
         <a href={whatsappPahangUrl} target="_blank" rel="noreferrer">+60 11-6987 2708<span className="sr-only"> (buka di tab baharu)</span></a>
         <a href="mailto:syriuspahang@gmail.com">syriuspahang@gmail.com</a>
         <a href="https://www.google.com/maps/search/?api=1&query=No.+9%2C+Tingkat+1%2C+Jalan+Star+City+1%2C+Mentakab+Star+City%2C+28400+Mentakab%2C+Pahang" target="_blank" rel="noreferrer">No. 9, Tingkat 1, Jalan Star City 1<br />Mentakab Star City, 28400 Mentakab.<span className="sr-only"> (buka di tab baharu)</span></a>
-      </div>
+      </address>
     </div><div className="container copyright">© 2026 Syrius Malaysia <span lang="en">Wear Your Vision</span></div></footer>
   </>;
 }
