@@ -24,6 +24,13 @@ const nextConfig: NextConfig = {
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
+          // Every target="_blank" link on the site already uses rel="noreferrer"
+          // (severs window.opener already), so this changes no existing behaviour.
+          // Doesn't affect social-crawler link previews (og:image) - those are
+          // server-side fetches, not browser-mediated no-cors subresource loads,
+          // which is what COOP/CORP actually govern.
+          { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+          { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' },
           // Enforced only in production: Vite's dev-mode HMR client relies on
           // eval(), which this policy's script-src correctly has no allowance
           // for (verified clean against the real production build).
