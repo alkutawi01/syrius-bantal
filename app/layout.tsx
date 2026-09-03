@@ -86,6 +86,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" />
+      {/* vinext's appleWebApp metadata shim only emits the modern mobile-web-app-capable
+          tag; iOS itself only started recognising that one in 17.4 (Apr 2024) and still
+          needs this legacy tag for standalone mode on older versions. */}
+      <meta name="apple-mobile-web-app-capable" content="yes" />
     </head>
     <body>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
