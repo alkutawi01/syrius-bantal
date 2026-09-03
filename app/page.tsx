@@ -74,14 +74,14 @@ export default function Home() {
       </div>
     </div></section>
 
-    <section className="statement" id="tentang"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2>Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Logo dan warna jenama anda dicetak terus ke atas fabrik bantal melalui sublimasi, hasil tahan lama untuk hadiah staf, pelanggan, rakan strategik dan tetamu acara — bukan cetakan tampal yang mudah luntur.</p></div></section>
+    <section className="statement" id="tentang" aria-labelledby="tentang-heading"><div className="container statement-grid" data-reveal><p className="eyebrow">SYRIUS MALAYSIA</p><h2 id="tentang-heading">Jadikan jenama anda<br />lebih dekat dengan penerima.</h2><p>Logo dan warna jenama anda dicetak terus ke atas fabrik bantal melalui sublimasi, hasil tahan lama untuk hadiah staf, pelanggan, rakan strategik dan tetamu acara — bukan cetakan tampal yang mudah luntur.</p></div></section>
 
-    <section className="section faq" id="faq"><div className="container">
-      <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2>Sebelum anda <em>menghubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
+    <section className="section faq" id="faq" aria-labelledby="faq-heading"><div className="container">
+      <div className="section-head" data-reveal><div><p className="eyebrow">SOALAN LAZIM</p><h2 id="faq-heading">Sebelum anda <em>menghubungi kami.</em></h2></div><p>Jawapan ringkas untuk soalan yang selalu ditanya sebelum menempah.</p></div>
       <ul className="faq-list">{faqs.map(([q, a, link]) => <li key={q}><details className="faq-item" data-reveal><summary>{q}<span className="faq-icon" aria-hidden="true">+</span></summary><p>{a}{link}</p></details></li>)}</ul>
     </div></section>
 
-    <section className="final-cta"><div className="container" data-reveal><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2>Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang reka bentuk, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
+    <section className="final-cta" aria-labelledby="final-cta-heading"><div className="container" data-reveal><p className="eyebrow">SEDIA UNTUK BERI IMPAK?</p><h2 id="final-cta-heading">Jenama anda.<br /><em>Hadiah mereka.</em></h2><p>Hubungi Syrius untuk berbincang tentang reka bentuk, kuantiti, harga dan penghantaran.</p><Button href={whatsappUrl} variant="white">Dapatkan sebut harga <span aria-hidden="true">↗</span></Button></div></section>
 
     <SiteFooter />
   </main>;
