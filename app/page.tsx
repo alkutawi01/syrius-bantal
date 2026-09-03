@@ -52,8 +52,8 @@ export default function Home() {
 
       <figure className="bento-tile bento-photo">
         <picture>
-          <source srcSet="/syrius-corporate-pillow-blank.webp" type="image/webp" />
-          <img src="/syrius-corporate-pillow-blank.jpg" alt="Bantal sublimasi kosong, sedia untuk cetakan logo jenama anda" fetchPriority="high" />
+          <source srcSet="/syrius-corporate-pillow-blank-900.webp 900w, /syrius-corporate-pillow-blank.webp 1600w" sizes="(max-width: 900px) 100vw, 700px" type="image/webp" />
+          <img src="/syrius-corporate-pillow-blank.jpg" srcSet="/syrius-corporate-pillow-blank-900.jpg 900w, /syrius-corporate-pillow-blank.jpg 1600w" sizes="(max-width: 900px) 100vw, 700px" alt="Bantal sublimasi kosong, sedia untuk cetakan logo jenama anda" fetchPriority="high" />
         </picture>
         <figcaption lang="en"><span>Corporate gifting</span>Made for your brand</figcaption>
       </figure>
