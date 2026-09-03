@@ -202,7 +202,15 @@ footer :focus-visible,
 [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; }
+  /* Kill the movement, keep every end state: transforms still land (the FAQ
+     "+" still turns into an ×, the skip link still reaches top: 0), they just
+     don't animate there. Colour/background changes survive as instant swaps. */
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
   [data-reveal] { opacity: 1; transform: none; transition: none; }
 }
 @media (max-width: 900px) {
