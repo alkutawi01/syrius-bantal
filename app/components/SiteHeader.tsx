@@ -3,9 +3,9 @@ import { Wordmark } from './Wordmark';
 import { MobileMenu } from './MobileMenu';
 import { whatsappUrl } from '../lib/whatsapp';
 
-type Props = { base?: string; active?: 'panduan' | 'majalah' | 'portfolio' };
+type Props = { base?: string; active?: 'panduan' | 'majalah' | 'portfolio'; enHref?: string };
 
-export function SiteHeader({ base = '', active }: Props) {
+export function SiteHeader({ base = '', active, enHref }: Props) {
   return <>
     <div className="announcement"><div className="container"><span lang="en">Corporate Gifting &amp; Branded Pillows</span><a href="tel:+601154498790">+60 11-5449 8790</a></div></div>
     <header className="site-header"><div className="container nav">
@@ -20,8 +20,9 @@ export function SiteHeader({ base = '', active }: Props) {
         <a href={`${base}#tentang`}>Tentang kami</a>
       </nav>
       <div className="nav-right">
+        {enHref && <a className="lang-switch" href={enHref} lang="en" hrefLang="en">EN</a>}
         <Button href={whatsappUrl} variant="white" size="sm">Minta sebut harga <span aria-hidden="true">↗</span></Button>
-        <MobileMenu base={base} active={active} />
+        <MobileMenu base={base} active={active} enHref={enHref} />
       </div>
     </div></header>
   </>;
