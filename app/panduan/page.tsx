@@ -62,7 +62,7 @@ export default function Panduan() {
     <a className="skip-link" href="#kandungan">Langkau ke kandungan utama</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
     <ScrollReveal />
-    <SiteHeader base="/" active="panduan" />
+    <SiteHeader base="/" active="panduan" enHref="/en/panduan" />
 
     <section className="section" id="kandungan" tabIndex={-1}><div className="container">
       <div className="section-head" data-reveal>

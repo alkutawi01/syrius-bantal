@@ -4,8 +4,9 @@ import { Button } from '../components/Button';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { MobileMenu } from '../components/MobileMenu';
 import { SetHtmlLang } from '../components/SetHtmlLang';
+import { SiteFooter } from '../components/SiteFooter';
 import { Wordmark } from '../components/Wordmark';
-import { whatsappUrlEn } from '../lib/whatsapp';
+import { whatsappUrlEn, whatsappPahangUrlEn } from '../lib/whatsapp';
 
 const title = 'Custom Corporate Cushions — Syrius';
 const description = 'Branded sublimation-printed corporate cushions for companies and organisations in Malaysia. Part of Syrius, trusted since 2011.';
@@ -38,7 +39,7 @@ const values: [string, string, ReactNode][] = [
 const faqs: [string, string, ReactNode?][] = [
   ['Do you have a minimum order quantity?', "No. Small orders receive the same attention to quality as larger ones, making them suitable for team gifts, internal events and other smaller requirements."],
   ['How do I place an order?', "Contact us via WhatsApp and share your requirements, including the event type, quantity and intended use. Send us your logo and brand colours, and we'll review the design and provide a quote before production begins."],
-  ['Can the design be fully customised to match our brand?', 'Yes. The logo, colours and layout can be tailored to match your organisation’s visual identity.', <> <a className="text-link" href="/portfolio">See design examples</a></>],
+  ['Can the design be fully customised to match our brand?', 'Yes. The logo, colours and layout can be tailored to match your organisation’s visual identity.', <> <a className="text-link" href="/en/portfolio">See design examples</a></>],
   ['Which areas do you deliver to?', 'We deliver nationwide across Malaysia via courier. Our studios are based in Kota Bharu, Kelantan, and Mentakab, Pahang.'],
   ['What is the turnaround time?', 'Turnaround time depends on the order quantity and design complexity. Contact us via WhatsApp for an estimate based on your requirements.'],
 ];
@@ -75,7 +76,7 @@ export default function HomeEn() {
       <nav aria-label="Main navigation">
         <a href="#cara-en">How to order</a>
         <a href="#kelebihan-en">Why us</a>
-        <a href="/portfolio">Portfolio</a>
+        <a href="/en/portfolio">Portfolio</a>
         <a href="#faq-en">FAQ</a>
       </nav>
       <div className="nav-right">
@@ -84,7 +85,7 @@ export default function HomeEn() {
           links={[
             ['#cara-en', 'How to order'],
             ['#kelebihan-en', 'Why us'],
-            ['/portfolio', 'Portfolio', 'portfolio'],
+            ['/en/portfolio', 'Portfolio', 'portfolio'],
             ['#faq-en', 'FAQ'],
             ['/', 'Bahasa Melayu'],
           ]}
@@ -136,24 +137,6 @@ export default function HomeEn() {
 
     <section className="final-cta" aria-labelledby="final-cta-heading-en"><div className="container" data-reveal><p className="eyebrow">READY TO MAKE AN IMPACT?</p><h2 id="final-cta-heading-en">Your brand.<br /><em>Their gift.</em></h2><p>Contact Syrius to discuss design, quantity, pricing and delivery.</p><Button href={whatsappUrlEn} variant="white" newTabLabel="(opens in a new tab)">Request a Quote <span aria-hidden="true">↗</span></Button></div></section>
 
-    <a className="fab-whatsapp" href={whatsappUrlEn} target="_blank" rel="noreferrer" aria-label="WhatsApp Syrius (opens in a new tab)">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z" stroke="#fff" strokeWidth="1.6"/><path d="M8.5 8.4c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.5 1.5.2.1.4.1.5-.1.2-.2.6-.7.8-1 .2-.2.4-.2.6-.1l1.5.7c.2.1.4.2.4.4.1.5-.1 1.1-.4 1.5-.3.4-1 .8-1.8.8-1.5 0-3.2-.9-4.5-2.1-1.3-1.3-2.3-3-2.5-4.6-.1-.7.1-1.3.5-1.7Z" fill="#fff"/></svg>
-    </a>
-
-    <footer><div className="container footer-grid">
-      <div><Wordmark /><p>Custom corporate cushions for more meaningful gifts.</p></div>
-      <address>
-        <p className="footer-label">KELANTAN (HQ)</p>
-        <a href={whatsappUrlEn} target="_blank" rel="noreferrer">+60 11-5449 8790<span className="sr-only"> (opens in a new tab)</span></a>
-        <a href="mailto:syriusmalaysia@gmail.com">syriusmalaysia@gmail.com</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=PT+428%2C+Pusat+Perniagaan+Bandar+Baru+Tunjong%2C+16010+Kota+Bharu%2C+Kelantan" target="_blank" rel="noreferrer">PT 428, Pusat Perniagaan<br />Bandar Baru Tunjong, 16010 Kota Bharu.<span className="sr-only"> (opens in a new tab)</span></a>
-      </address>
-      <address>
-        <p className="footer-label">PAHANG</p>
-        <a href="https://wa.me/601169872708?text=Hi%20Syrius%20Pahang%2C%20I%27d%20like%20to%20request%20a%20quote%20for%20branded%20corporate%20cushions" target="_blank" rel="noreferrer">+60 11-6987 2708<span className="sr-only"> (opens in a new tab)</span></a>
-        <a href="mailto:syriuspahang@gmail.com">syriuspahang@gmail.com</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=No.+9%2C+Tingkat+1%2C+Jalan+Star+City+1%2C+Mentakab+Star+City%2C+28400+Mentakab%2C+Pahang" target="_blank" rel="noreferrer">No. 9, Tingkat 1, Jalan Star City 1<br />Mentakab Star City, 28400 Mentakab.<span className="sr-only"> (opens in a new tab)</span></a>
-      </address>
-    </div><div className="container copyright">© {new Date().getFullYear()} Syrius Malaysia <span lang="en">Wear Your Vision</span></div></footer>
+    <SiteFooter tagline="Custom corporate cushions for more meaningful gifts." newTabLabel="(opens in a new tab)" whatsappUrl={whatsappUrlEn} whatsappPahangUrl={whatsappPahangUrlEn} />
   </main>;
 }

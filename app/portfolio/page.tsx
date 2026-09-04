@@ -36,7 +36,7 @@ export default async function Portfolio() {
   return <main>
     <a className="skip-link" href="#portfolio">Langkau ke kandungan utama</a>
     <ScrollReveal />
-    <SiteHeader base="/" active="portfolio" />
+    <SiteHeader base="/" active="portfolio" enHref="/en/portfolio" />
 
     <section className="section" id="portfolio" tabIndex={-1}><div className="container">
       <div className="section-head" data-reveal>
