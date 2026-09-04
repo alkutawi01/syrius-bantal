@@ -15,7 +15,7 @@ const faqs: [string, string, ReactNode?][] = [
   ['Adakah kuantiti tempahan minimum tinggi?', 'Tidak. Tempahan tidak perlu bermula dalam jumlah besar untuk mendapatkan standard kualiti yang sama — sesuai untuk keperluan kecil seperti hadiah pasukan atau acara dalaman.'],
   ['Bagaimana cara menempah?', 'Hubungi kami melalui WhatsApp, kongsi keperluan (jenis acara, jumlah unit dan tujuan), hantar logo dan warna jenama anda. Kami akan menyemak reka bentuk dan menyediakan sebut harga sebelum cetakan bermula.'],
   ['Bolehkah reka bentuk disesuaikan sepenuhnya mengikut jenama kami?', 'Ya. Logo, warna dan susun atur disesuaikan mengikut identiti visual organisasi anda.', <> <a className="text-link" href="/portfolio">Lihat contoh reka bentuk</a></>],
-  ['Kawasan mana yang diliputi untuk penghantaran?', 'Kelantan dan Pahang. Studio kami di Kota Bharu (Kelantan) dan Mentakab (Pahang).'],
+  ['Kawasan mana yang diliputi untuk penghantaran?', 'Seluruh Malaysia, melalui perkhidmatan kurier. Studio kami berpangkalan di Kota Bharu (Kelantan) dan Mentakab (Pahang).'],
   ['Berapa lama tempoh penyediaan tempahan?', 'Bergantung pada kuantiti dan kerumitan reka bentuk. Hubungi kami melalui WhatsApp untuk anggaran tempoh yang tepat mengikut keperluan anda.', <> <a className="text-link" href="/panduan">Baca panduan penuh</a></>],
 ];
 
@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="bento-tile bento-fact" data-reveal style={{ transitionDelay: '240ms' }}>
         <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /><path d="M8.5 14.5l2 2 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg><div><b>Sejak 2011</b><span>Sebahagian daripada Syrius</span></div></div>
-        <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg><div><b>Kelantan &amp; Pahang</b><span>Liputan penghantaran</span></div></div>
+        <div className="fact"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.6" /></svg><div><b>Seluruh Malaysia</b><span>Liputan penghantaran</span></div></div>
       </div>
 
       <div className="bento-tile bento-steps" id="cara" data-reveal>

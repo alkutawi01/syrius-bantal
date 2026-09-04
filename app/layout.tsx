@@ -54,7 +54,7 @@ const jsonLd = {
         postalCode: '16010',
         addressCountry: 'MY',
       },
-      areaServed: ['Kelantan', 'Pahang'],
+      areaServed: { '@type': 'Country', name: 'Malaysia' },
       makesOffer: productOffer,
     },
     {
@@ -73,7 +73,7 @@ const jsonLd = {
         postalCode: '28400',
         addressCountry: 'MY',
       },
-      areaServed: 'Pahang',
+      areaServed: { '@type': 'Country', name: 'Malaysia' },
       parentOrganization: { '@type': 'Organization', name: 'Syrius' },
       makesOffer: productOffer,
     },
