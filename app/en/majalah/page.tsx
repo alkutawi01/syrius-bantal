@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 // Articles are added here as each one gets an EN edition; the rest still only exist in BM.
 const articles: [string, string, string, ReactNode, number][] = [
   ['apa-itu-percetakan-sublimasi', 'What is sublimation printing?', 'A short explanation of sublimation printing: how a digital design is permanently transferred onto fabric using heat and pressure.', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>, 2],
+  ['asal-usul-perkataan-bantal-dan-pillow', 'The origins of "bantal" and "pillow"', 'The origins of the Malay word "bantal" and the English word "pillow" are traced through Austronesian and Latin-Germanic linguistic records.', <svg key="i5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6c-1.5-1.5-4-2-7-2v14c3 0 5.5.5 7 2 1.5-1.5 4-2 7-2V4c-3 0-5.5.5-7 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="M12 6v14" stroke="currentColor" strokeWidth="1.5" /></svg>, 5],
 ];
 
 const itemListJsonLd = {
