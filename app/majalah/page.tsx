@@ -57,7 +57,7 @@ export default function Majalah() {
     <a className="skip-link" href="#majalah">Langkau ke kandungan utama</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
     <ScrollReveal />
-    <SiteHeader base="/" active="majalah" enHref="/en/majalah" />
+    <SiteHeader base="/" active="majalah" enHref="/en/majalah" zhHref="/zh/majalah" />
 
     <section className="section" id="majalah" tabIndex={-1}><div className="container">
       <div className="section-head" data-reveal>
