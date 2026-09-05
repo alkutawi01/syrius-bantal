@@ -70,7 +70,7 @@ export default function HomeEn() {
     {/* Minimal English header - reuses MobileMenu (with a custom links override) for mobile nav;
         the rest of the shared SiteHeader markup is BM-only, not worth parameterising for a single
         evaluation page. Revisit if the EN edition expands. */}
-    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/" lang="ms" hrefLang="ms">Bahasa Melayu</a></div></div>
+    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/" lang="ms" hrefLang="ms">Bahasa Melayu</a><a href="/zh" lang="zh" hrefLang="zh">中文</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="#utama-en" aria-label="Syrius, back to top"><Wordmark /></a>
       <nav aria-label="Main navigation">
@@ -90,6 +90,7 @@ export default function HomeEn() {
             ['/en/majalah', 'Magazine'],
             ['#faq-en', 'FAQ'],
             ['/', 'Bahasa Melayu'],
+            ['/zh', '中文'],
           ]}
           navLabel="Mobile navigation"
           openLabel="Open menu"

@@ -40,7 +40,7 @@ export default function Home() {
     <a className="skip-link" href="#utama">Langkau ke kandungan utama</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <ScrollReveal />
-    <SiteHeader enHref="/en" />
+    <SiteHeader enHref="/en" zhHref="/zh" />
 
     <section className="bento" id="utama" tabIndex={-1}><div className="container bento-grid">
       <div className="bento-tile bento-hero">

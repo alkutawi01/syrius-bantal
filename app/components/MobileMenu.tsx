@@ -6,6 +6,7 @@ type Props = {
   base?: string;
   active?: 'panduan' | 'majalah' | 'portfolio';
   enHref?: string;
+  zhHref?: string;
   /** Override the default BM links entirely - used by the standalone /en page. */
   links?: LinkTuple[];
   navLabel?: string;
@@ -13,7 +14,7 @@ type Props = {
   closeLabel?: string;
 };
 
-export function MobileMenu({ base = '', active, enHref, links: linksOverride, navLabel = 'Navigasi mudah alih', openLabel = 'Buka menu', closeLabel = 'Tutup menu' }: Props) {
+export function MobileMenu({ base = '', active, enHref, zhHref, links: linksOverride, navLabel = 'Navigasi mudah alih', openLabel = 'Buka menu', closeLabel = 'Tutup menu' }: Props) {
   const links: LinkTuple[] = linksOverride ?? [
     [`${base}#cara`, 'Cara tempahan'],
     [`${base}#kelebihan`, 'Kelebihan'],
@@ -23,6 +24,7 @@ export function MobileMenu({ base = '', active, enHref, links: linksOverride, na
     ['/majalah', 'Majalah', 'majalah'],
     [`${base}#tentang`, 'Tentang kami'],
     ...(enHref ? [[enHref, 'English'] as LinkTuple] : []),
+    ...(zhHref ? [[zhHref, '中文'] as LinkTuple] : []),
   ];
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -63,7 +65,7 @@ export function MobileMenu({ base = '', active, enHref, links: linksOverride, na
       </svg>
     </button>
     {open && <nav id="mobile-menu-panel" className="mobile-menu-panel" aria-label={navLabel}>
-      {links.map(([href, label, key], i) => <a key={href} ref={i === 0 ? firstLinkRef : undefined} href={href} lang={href === enHref ? 'en' : undefined} hrefLang={href === enHref ? 'en' : undefined} aria-current={key && key === active ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</a>)}
+      {links.map(([href, label, key], i) => <a key={href} ref={i === 0 ? firstLinkRef : undefined} href={href} lang={href === enHref ? 'en' : href === zhHref ? 'zh' : undefined} hrefLang={href === enHref ? 'en' : href === zhHref ? 'zh' : undefined} aria-current={key && key === active ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</a>)}
     </nav>}
   </div>;
 }
