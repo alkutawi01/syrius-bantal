@@ -52,7 +52,7 @@ export default function Artikel() {
     <a className="skip-link" href="#artikel">Langkau ke kandungan utama</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     <ScrollReveal />
-    <SiteHeader base="/" active="majalah" />
+    <SiteHeader base="/" active="majalah" enHref="/en/majalah/jenis-pengisian-bantal" />
 
     <article className="section" id="artikel" tabIndex={-1}><div className="container" style={{ maxWidth: 720 }}>
       <a className="eyebrow" href="/majalah" data-reveal>← MAJALAH</a>
