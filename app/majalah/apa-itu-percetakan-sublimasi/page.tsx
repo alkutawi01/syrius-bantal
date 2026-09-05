@@ -5,7 +5,7 @@ import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
 
 const title = 'Apa Itu Percetakan Sublimasi? — Majalah Syrius';
-const description = 'Penjelasan ringkas proses percetakan sublimasi: bagaimana reka bentuk digital dipindahkan secara kekal ke atas fabrik menggunakan haba dan tekanan.';
+const description = 'Penjelasan ringkas proses percetakan sublimasi: bagaimana reka bentuk digital dipindahkan ke dalam gentian fabrik menggunakan haba dan tekanan untuk menghasilkan cetakan yang tahan lama.';
 
 export const metadata: Metadata = {
   title,
@@ -32,7 +32,7 @@ const steps: [string, string, ReactNode][] = [
   ['Reka bentuk dicetak', 'Reka bentuk digital dicetak ke kertas pemindahan khas menggunakan dakwat sublimasi pepejal.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['Ditekan dengan haba', 'Kertas dan fabrik dimasukkan ke mesin penekan haba pada suhu sekitar 195–205 °C.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>],
   ['Dakwat menjadi gas', 'Haba menukar dakwat pepejal terus menjadi gas, yang kemudian meresap ke dalam gentian poliester.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
-  ['Terperangkap kekal', 'Fabrik menyejuk, dan dakwat kekal terperangkap di dalam gentian secara kekal.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['Menyatu dalam gentian', 'Fabrik menyejuk, dan pewarna menyatu dalam struktur gentian fabrik.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
 ];
 
 const articleJsonLd = {
@@ -74,7 +74,7 @@ export default function Artikel() {
           </div>)}
         </div>
         <p>Proses bermula apabila reka bentuk digital dicetak ke atas kertas pemindahan khas menggunakan dakwat sublimasi — dakwat yang berbentuk pepejal pada suhu bilik. Kertas ini kemudian diletakkan bersentuhan dengan fabrik dan dimasukkan ke dalam mesin penekan haba (<em lang="en" style={{ fontStyle: 'normal' }}>heat press</em>) pada suhu tinggi, biasanya sekitar 195–205 °C, dengan tekanan yang tetap selama beberapa saat.</p>
-        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba meningkatkan pergerakan molekul poliester, membolehkan gas dakwat meresap ke dalam gentian tersebut. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, dakwat kekal terperangkap di dalam struktur gentian secara kekal.</p>
+        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba meningkatkan pergerakan molekul poliester, membolehkan gas dakwat meresap ke dalam gentian tersebut. Selepas haba dikeluarkan dan fabrik menyejuk, pewarna menyatu dalam struktur gentian fabrik, menghasilkan cetakan yang tahan lama.</p>
       </div>
 
       <div data-reveal>

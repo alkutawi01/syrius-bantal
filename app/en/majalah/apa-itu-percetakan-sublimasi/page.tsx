@@ -9,7 +9,7 @@ import { Wordmark } from '../../../components/Wordmark';
 import { whatsappUrlEn, whatsappPahangUrlEn } from '../../../lib/whatsapp';
 
 const title = 'What Is Sublimation Printing? — Syrius Magazine';
-const description = 'A short explanation of sublimation printing: how a digital design is permanently transferred onto fabric using heat and pressure.';
+const description = 'A short explanation of sublimation printing: how a digital design is durably transferred into fabric fibres using heat and pressure.';
 
 export const metadata: Metadata = {
   title,
@@ -36,7 +36,7 @@ const steps: [string, string, ReactNode][] = [
   ['Design is printed', 'The digital design is printed onto special transfer paper using solid sublimation ink.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['Pressed with heat', 'The paper and fabric are fed into a heat press machine at around 195–205 °C.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>],
   ['Dye turns to gas', 'Heat turns the solid dye directly into gas, which then diffuses into the polyester fibres.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
-  ['Locked in permanently', 'The fabric cools, and the dye stays trapped within the fibres for good.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['Integrated into the fibres', 'The fabric cools, and the dye remains embedded within the fibre structure.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
 ];
 
 const articleJsonLd = {
@@ -107,7 +107,7 @@ export default function ArtikelEn() {
           </div>)}
         </div>
         <p>The process begins when a digital design is printed onto special transfer paper using sublimation ink — an ink that is solid at room temperature. This paper is then placed in contact with the fabric and fed into a heat press machine at high temperature, typically around 195–205 °C, under steady pressure for a few seconds.</p>
-        <p>At this temperature, the solid dye in the ink turns directly into gas without passing through a liquid phase — a process called sublimation. The heat increases the mobility of the polyester molecules, allowing the dye gas to diffuse into the fibres. Once the heat is removed and the fabric cools, the dye becomes trapped within the fibre structure, permanently locked in.</p>
+        <p>At this temperature, the solid dye in the ink turns directly into gas without passing through a liquid phase — a process called sublimation. The heat increases the mobility of the polyester molecules, allowing the dye gas to diffuse into the fibres. Once the heat is removed and the fabric cools, the dye remains embedded within the fibre structure, creating a durable print.</p>
       </div>
 
       <div data-reveal>
