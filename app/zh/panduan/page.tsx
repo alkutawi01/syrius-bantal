@@ -72,7 +72,7 @@ export default function PanduanZh() {
       <nav aria-label="主导航">
         <a href="/zh#cara-zh">订购流程</a>
         <a href="/zh#kelebihan-zh">为何选择我们</a>
-        <a href="/zh/portfolio">作品集</a>
+        <a href="/zh/portfolio">设计案例</a>
         <a href="/zh/majalah">杂志</a>
         <a href="/zh#faq-zh">常见问题</a>
       </nav>
@@ -82,7 +82,7 @@ export default function PanduanZh() {
           links={[
             ['/zh#cara-zh', '订购流程'],
             ['/zh#kelebihan-zh', '为何选择我们'],
-            ['/zh/portfolio', '作品集'],
+            ['/zh/portfolio', '设计案例'],
             ['/zh/majalah', '杂志'],
             ['/zh#faq-zh', '常见问题'],
             ['/panduan', 'Bahasa Melayu'],

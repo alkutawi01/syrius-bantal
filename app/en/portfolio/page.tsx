@@ -41,7 +41,7 @@ export default function PortfolioEn() {
     <a className="skip-link" href="#portfolio-en">Skip to main content</a>
     <ScrollReveal />
 
-    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/portfolio" lang="ms" hrefLang="ms">Bahasa Melayu</a></div></div>
+    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/portfolio" lang="ms" hrefLang="ms">Bahasa Melayu</a><a href="/zh/portfolio" lang="zh" hrefLang="zh">中文</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="/en" aria-label="Syrius, back to home"><Wordmark /></a>
       <nav aria-label="Main navigation">
@@ -61,6 +61,7 @@ export default function PortfolioEn() {
             ['/en/majalah', 'Magazine'],
             ['/en#faq-en', 'FAQ'],
             ['/portfolio', 'Bahasa Melayu'],
+            ['/zh/portfolio', '中文'],
           ]}
           navLabel="Mobile navigation"
           openLabel="Open menu"

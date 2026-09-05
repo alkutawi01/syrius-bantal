@@ -39,7 +39,7 @@ const values: [string, string, ReactNode][] = [
 const faqs: [string, string, ReactNode?][] = [
   ['有最低订购数量要求吗？', '目前没有最低订购数量要求，小批量与大批量订购皆采用一致的品质标准，适合团队礼品、内部活动等较小规模的需求。'],
   ['如何下单？', '通过WhatsApp联系我们，分享您的需求（活动类型、数量与用途）。发送您的Logo与品牌配色，我们会确认设计需求并提供报价，待您确认后才开始制作。'],
-  ['设计可以根据我们的品牌视觉定制吗？', '可以。Logo呈现、配色与版面都能按照贵机构的品牌视觉规范进行定制。', <> <a className="text-link" href="/zh/portfolio">查看设计范例</a></>],
+  ['设计可以根据我们的品牌视觉定制吗？', '可以。Logo呈现、配色与版面都能按照贵机构的品牌视觉规范进行定制。', <> <a className="text-link" href="/zh/portfolio">查看设计案例</a></>],
   ['你们的配送范围包括哪些地区？', '我们通过快递服务配送全马。我们的工作室分别位于吉兰丹哥打峇鲁与彭亨文德甲。'],
   ['制作周期需要多久？', '视订购数量与设计复杂度而定。请通过WhatsApp联系我们，以获取较准确的制作周期与预计交期。'],
 ];
@@ -75,7 +75,7 @@ export default function HomeZh() {
       <nav aria-label="主导航">
         <a href="#cara-zh">订购流程</a>
         <a href="#kelebihan-zh">为何选择我们</a>
-        <a href="/zh/portfolio">作品集</a>
+        <a href="/zh/portfolio">设计案例</a>
         <a href="/zh/majalah">杂志</a>
         <a href="#faq-zh">常见问题</a>
       </nav>
@@ -85,7 +85,7 @@ export default function HomeZh() {
           links={[
             ['#cara-zh', '订购流程'],
             ['#kelebihan-zh', '为何选择我们'],
-            ['/zh/portfolio', '作品集', 'portfolio'],
+            ['/zh/portfolio', '设计案例', 'portfolio'],
             ['/zh/majalah', '杂志'],
             ['#faq-zh', '常见问题'],
             ['/', 'Bahasa Melayu'],
