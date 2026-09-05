@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 // Articles are added here as each one gets a Mandarin edition; the rest still only exist in BM.
 const articles: [string, string, string, ReactNode, number][] = [
   ['apa-itu-percetakan-sublimasi', '什么是热升华印花？', '简明介绍热升华印花工艺：数码设计如何通过加热与加压转印至布料纤维中。', <svg key="i1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>, 2],
+  ['asal-usul-perkataan-bantal-dan-pillow', '“bantal”与“pillow”的词源', '追溯马来语“bantal”与英语“pillow”的词源，从南岛语系与拉丁-日耳曼语系的语言记录中寻找线索。', <svg key="i5" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6c-1.5-1.5-4-2-7-2v14c3 0 5.5.5 7 2 1.5-1.5 4-2 7-2V4c-3 0-5.5.5-7 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="M12 6v14" stroke="currentColor" strokeWidth="1.5" /></svg>, 5],
 ];
 
 const itemListJsonLd = {
