@@ -50,7 +50,7 @@ export default function ArtikelEn() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     <ScrollReveal />
 
-    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/majalah/bantal-unik-dari-pelbagai-budaya-dunia" lang="ms" hrefLang="ms">Bahasa Melayu</a></div></div>
+    <div className="announcement"><div className="container"><span>Corporate Gifting &amp; Branded Cushions</span><a href="/majalah/bantal-unik-dari-pelbagai-budaya-dunia" lang="ms" hrefLang="ms">Bahasa Melayu</a><a href="/zh/majalah/bantal-unik-dari-pelbagai-budaya-dunia" lang="zh" hrefLang="zh">中文</a></div></div>
     <header className="site-header"><div className="container nav">
       <a href="/en" aria-label="Syrius, back to home"><Wordmark /></a>
       <nav aria-label="Main navigation">
@@ -70,6 +70,7 @@ export default function ArtikelEn() {
             ['/en/majalah', 'Magazine'],
             ['/en#faq-en', 'FAQ'],
             ['/majalah/bantal-unik-dari-pelbagai-budaya-dunia', 'Bahasa Melayu'],
+            ['/zh/majalah/bantal-unik-dari-pelbagai-budaya-dunia', '中文'],
           ]}
           navLabel="Mobile navigation"
           openLabel="Open menu"
