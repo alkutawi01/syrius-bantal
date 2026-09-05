@@ -77,6 +77,7 @@ export default function HomeEn() {
         <a href="#cara-en">How to order</a>
         <a href="#kelebihan-en">Why us</a>
         <a href="/en/portfolio">Portfolio</a>
+        <a href="/en/majalah">Magazine</a>
         <a href="#faq-en">FAQ</a>
       </nav>
       <div className="nav-right">
@@ -86,6 +87,7 @@ export default function HomeEn() {
             ['#cara-en', 'How to order'],
             ['#kelebihan-en', 'Why us'],
             ['/en/portfolio', 'Portfolio', 'portfolio'],
+            ['/en/majalah', 'Magazine'],
             ['#faq-en', 'FAQ'],
             ['/', 'Bahasa Melayu'],
           ]}

@@ -48,6 +48,7 @@ export default function PortfolioEn() {
         <a href="/en#cara-en">How to order</a>
         <a href="/en#kelebihan-en">Why us</a>
         <a href="/en/portfolio" aria-current="page">Portfolio</a>
+        <a href="/en/majalah">Magazine</a>
         <a href="/en#faq-en">FAQ</a>
       </nav>
       <div className="nav-right">
@@ -57,6 +58,7 @@ export default function PortfolioEn() {
             ['/en#cara-en', 'How to order'],
             ['/en#kelebihan-en', 'Why us'],
             ['/en/portfolio', 'Portfolio'],
+            ['/en/majalah', 'Magazine'],
             ['/en#faq-en', 'FAQ'],
             ['/portfolio', 'Bahasa Melayu'],
           ]}
