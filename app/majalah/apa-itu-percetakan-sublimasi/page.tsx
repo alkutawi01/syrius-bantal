@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 const steps: [string, string, ReactNode][] = [
   ['Reka bentuk dicetak', 'Reka bentuk digital dicetak ke kertas pemindahan khas menggunakan dakwat sublimasi pepejal.', <svg key="s1" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" /><circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6" /><path d="M21 15l-5.5-5.5L7 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
   ['Ditekan dengan haba', 'Kertas dan fabrik dimasukkan ke mesin penekan haba pada suhu sekitar 195–205 °C.', <svg key="s2" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="6" rx="1" stroke="currentColor" strokeWidth="1.5" /><path d="M12 10v6m0 0l-3-3m3 3l3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /><rect x="4" y="17" width="16" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" /></svg>],
-  ['Dakwat menjadi gas', 'Haba menukar dakwat pepejal terus menjadi gas dan membuka liang halus fabrik.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
-  ['Terperangkap kekal', 'Fabrik menyejuk, liang tertutup semula dan dakwat kekal terperangkap di dalamnya.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
+  ['Dakwat menjadi gas', 'Haba menukar dakwat pepejal terus menjadi gas, yang kemudian meresap ke dalam gentian poliester.', <svg key="s3" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="1.3" fill="currentColor" /><circle cx="12" cy="6" r="1.3" fill="currentColor" /><circle cx="17" cy="9" r="1.3" fill="currentColor" /><circle cx="9" cy="13" r="1.3" fill="currentColor" /><circle cx="15" cy="14" r="1.3" fill="currentColor" /><circle cx="12" cy="18" r="1.3" fill="currentColor" /></svg>],
+  ['Terperangkap kekal', 'Fabrik menyejuk, dan dakwat kekal terperangkap di dalam gentian secara kekal.', <svg key="s4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.2 1.3 2.5-.3 1 2.3 2.3 1-.3 2.5L21 11l-1.3 2.2.3 2.5-2.3 1-1 2.3-2.5-.3L12 20l-2.2-1.3-2.5.3-1-2.3-2.3-1 .3-2.5L3 11l1.3-2.2-.3-2.5 2.3-1 1-2.3 2.5.3L12 2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" /><path d="M8.5 12l2.3 2.3 4.7-4.7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>],
 ];
 
 const articleJsonLd = {
@@ -61,7 +61,7 @@ export default function Artikel() {
       </h1>
       <p style={{ color: 'var(--text)', fontSize: 13, margin: '0 0 20px' }} data-reveal>2 minit bacaan</p>
       <p className="lede" data-reveal style={{ marginTop: 0 }}>
-        Percetakan sublimasi ialah kaedah mencetak reka bentuk yang menggunakan haba untuk memindahkan dakwat terus ke dalam struktur fabrik, bukan sekadar melekat di permukaannya. Kaedah ini digunakan secara meluas untuk mencetak logo, corak dan reka bentuk berwarna penuh ke atas tekstil seperti bantal, jersi dan pakaian sukan.
+        Percetakan sublimasi ialah kaedah mencetak reka bentuk yang menggunakan haba untuk memindahkan dakwat ke dalam gentian poliester, bukan sekadar melekat sebagai lapisan berasingan di permukaannya. Kaedah ini digunakan secara meluas untuk mencetak logo, corak dan reka bentuk berwarna penuh ke atas tekstil seperti bantal, jersi dan pakaian sukan.
       </p>
 
       <div data-reveal>
@@ -74,17 +74,17 @@ export default function Artikel() {
           </div>)}
         </div>
         <p>Proses bermula apabila reka bentuk digital dicetak ke atas kertas pemindahan khas menggunakan dakwat sublimasi — dakwat yang berbentuk pepejal pada suhu bilik. Kertas ini kemudian diletakkan bersentuhan dengan fabrik dan dimasukkan ke dalam mesin penekan haba (<em lang="en" style={{ fontStyle: 'normal' }}>heat press</em>) pada suhu tinggi, biasanya sekitar 195–205 °C, dengan tekanan yang tetap selama beberapa saat.</p>
-        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba turut membuka liang-liang halus pada fabrik, membolehkan gas dakwat meresap masuk. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, liang-liang tersebut tertutup semula dan dakwat terperangkap secara kekal di dalam struktur fabrik.</p>
+        <p>Pada suhu ini, dakwat pepejal bertukar terus menjadi gas tanpa melalui fasa cecair — proses yang dipanggil sublimasi. Haba meningkatkan pergerakan molekul poliester, membolehkan gas dakwat meresap ke dalam gentian tersebut. Sebaik sahaja haba ditarik keluar dan fabrik menyejuk, dakwat kekal terperangkap di dalam struktur gentian secara kekal.</p>
       </div>
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Kenapa fabrik poliester digunakan</h2>
-        <p>Kaedah ini hanya berkesan pada fabrik yang mengandungi poliester atau bahan bersalut polimer, kerana proses sublimasi bergantung pada tindak balas kimia antara dakwat gas dan struktur molekul poliester. Fabrik semula jadi seperti kapas tidak mempunyai struktur yang sesuai untuk menerima dakwat dengan cara ini, jadi hasil cetakan pada kapas biasanya pudar atau tidak jelas berbanding dengan hasil cetakan pada poliester.</p>
+        <p>Kaedah ini hanya berkesan pada fabrik yang mengandungi poliester atau bahan bersalut polimer, kerana sublimasi bergantung pada keupayaan molekul dakwat untuk meresap dan mengikat dengan gentian poliester pada suhu tinggi. Fabrik semula jadi seperti kapas yang tidak dirawat tidak mempunyai struktur poliester yang diperlukan untuk penyerapan dakwat sebegini, jadi hasil cetakan pada kapas biasanya pudar atau tidak jelas berbanding dengan hasil cetakan pada poliester.</p>
       </div>
 
       <div data-reveal>
         <h2 style={{ color: 'var(--ink)', fontSize: 22, letterSpacing: '-.01em', margin: '40px 0 14px' }}>Ciri hasil cetakan</h2>
-        <p>Oleh sebab dakwat menjadi sebahagian daripada gentian fabrik dan bukan lapisan di atas permukaannya, hasil cetakan sublimasi tidak retak, mengelupas atau luntur dengan cara yang sama seperti cetakan berasaskan lapisan permukaan (contohnya, sablon skrin biasa). Ini menjadikannya sesuai untuk reka bentuk berwarna penuh dan corak yang merentasi keseluruhan permukaan produk, seperti pada bantal atau jersi bercetak penuh.</p>
+        <p>Oleh sebab dakwat menjadi sebahagian daripada gentian fabrik dan bukan lapisan di atas permukaannya, hasil cetakan sublimasi sangat tahan terhadap keretakan dan pengelupasan, serta secara umumnya lebih tahan lama berbanding kaedah percetakan berasaskan lapisan permukaan (contohnya, sablon skrin biasa). Ini menjadikannya sesuai untuk reka bentuk berwarna penuh dan corak yang merentasi keseluruhan permukaan produk, seperti pada bantal atau jersi bercetak penuh.</p>
         <p>Setiap kaedah percetakan — sublimasi, DTF, DTG atau sablon — mempunyai kelebihan dan kesesuaian tersendiri bergantung pada jenis fabrik, kerumitan reka bentuk dan kuantiti tempahan. Tiada satu kaedah yang secara mutlak &ldquo;terbaik&rdquo; untuk semua situasi.</p>
       </div>
 
